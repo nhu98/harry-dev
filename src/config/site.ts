@@ -16,5 +16,6 @@ export const SITE = {
     { href: "/phrases", key: "phrases" },
     { href: "/assistant", key: "assistant" },
   ],
+  illustrations: { today: "/illustrations/today.svg", checklist: "/illustrations/checklist.svg", phrases: "/illustrations/phrases.svg", assistant: "/illustrations/assistant.svg", docs: "/illustrations/docs.svg" },
   routes: { assistantApi: "/api/assistant", docs: (slug: string) => `/docs/${slug}`, docsGroup: (g: string) => `/docs#group-${g}` },
 } as const;

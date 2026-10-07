@@ -63,6 +63,10 @@ export const styles = {
     canvas: "absolute inset-0 pointer-events-none opacity-70 dark:opacity-80",
     content: "relative z-10 p-6 sm:p-10",
   },
+  illustration: {
+    header: "flex items-start justify-between gap-4",
+    img: "hidden sm:block w-36 shrink-0 select-none",
+  },
   pager: "mt-10 flex justify-between gap-4 text-sm border-t border-border pt-4",
   flashcard: "min-h-44 p-6 flex flex-col justify-center shadow-sm active:scale-[0.99] transition",
   prose: "doc prose prose-neutral dark:prose-invert mt-4 prose-headings:tracking-tight prose-a:text-accent prose-code:before:content-none prose-code:after:content-none",

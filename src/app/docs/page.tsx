@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import { SITE } from "@/config/site";
 import { STRINGS } from "@/config/strings";
 import { PageHeader, Section, styles } from "@/shared/ui";
 import { GROUPS, GROUP_KEYS, getAllDocs, getDocsByGroup } from "@/features/docs/service";
@@ -11,7 +12,7 @@ export default function DocsIndexPage() {
   const byGroup = getDocsByGroup();
   return (
     <div className={styles.layout.pageStack}>
-      <PageHeader title={STRINGS.docs.title} description={STRINGS.docs.description}>
+      <PageHeader title={STRINGS.docs.title} description={STRINGS.docs.description} illustration={SITE.illustrations.docs}>
         <DocSearch docs={getAllDocs()} />
       </PageHeader>
       {GROUP_KEYS.map((g) => (

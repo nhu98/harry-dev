@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import { SITE } from "@/config/site";
 import { STRINGS } from "@/config/strings";
 import { PageHeader } from "@/shared/ui";
 import { getAllDocs } from "@/features/docs/service";
@@ -9,7 +10,7 @@ export const metadata: Metadata = { title: STRINGS.assistant.title };
 export default function AssistantPage() {
   return (
     <div className="max-w-2xl">
-      <PageHeader title={STRINGS.assistant.title} description={STRINGS.assistant.description} />
+      <PageHeader title={STRINGS.assistant.title} description={STRINGS.assistant.description} illustration={SITE.illustrations.assistant} />
       <AssistantChat docs={getAllDocs()} />
     </div>
   );
