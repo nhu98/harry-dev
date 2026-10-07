@@ -58,6 +58,11 @@ export const styles = {
     panel: "fixed z-30 bottom-0 right-0 w-full sm:bottom-4 sm:right-4 sm:w-[400px] max-h-[85vh] overflow-y-auto rounded-t-2xl sm:rounded-2xl border border-border bg-background shadow-2xl p-4",
     panelHeader: "flex items-center justify-between gap-2 mb-1",
   },
+  hero3d: {
+    wrap: "relative overflow-hidden rounded-2xl border border-border bg-card",
+    canvas: "absolute inset-0 pointer-events-none opacity-70 dark:opacity-80",
+    content: "relative z-10 p-6 sm:p-10",
+  },
   pager: "mt-10 flex justify-between gap-4 text-sm border-t border-border pt-4",
   flashcard: "min-h-44 p-6 flex flex-col justify-center shadow-sm active:scale-[0.99] transition",
   prose: "doc prose prose-neutral dark:prose-invert mt-4 prose-headings:tracking-tight prose-a:text-accent prose-code:before:content-none prose-code:after:content-none",

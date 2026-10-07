@@ -1,11 +1,11 @@
 /** Portfolio data. Edit this file to update the home page; no JSX here. */
 export const STACK = ["TypeScript", "React", "Next.js", "React Native", "Redux", "Tailwind CSS", "React Query", "Firebase", "Stripe / IAP", "WebSocket", "Jest / RTL", "Vercel"];
 
-export type WorkItem = { name: string; role: string; desc: string };
+export type WorkItem = { name: string; role: string; desc: string; icon: string };
 export const WORK: WorkItem[] = [
-  { name: "Waxstat", role: "Mobile & Frontend · 2024–nay", desc: "Price tracker cho thẻ thể thao. Xây toàn bộ frontend từ đầu (RN + React), ship 2 app lên App Store / Google Play, subscription IAP + Stripe chống double-charge, push pipeline FCM + Notifee, chart engine memoized." },
-  { name: "HugeWin", role: "Core Frontend · Next.js", desc: "Nền tảng gaming crypto. Auth + 2FA, module KYC với form từ CMS, realtime WebSocket (balance, deposit, KYC status), search engine client-side không gọi API mỗi phím." },
-  { name: "SadlierConnect", role: "Frontend · 2021–2022", desc: "Refactor nền tảng giáo dục Java server-rendered thành React SPA với API layer riêng, team 15 người. Redux, styled-components, Ant Design." },
+  { name: "Waxstat", icon: "📱", role: "Mobile & Frontend · 2024–nay", desc: "Price tracker cho thẻ thể thao. Xây toàn bộ frontend từ đầu (RN + React), ship 2 app lên App Store / Google Play, subscription IAP + Stripe chống double-charge, push pipeline FCM + Notifee, chart engine memoized." },
+  { name: "HugeWin", icon: "🎰", role: "Core Frontend · Next.js", desc: "Nền tảng gaming crypto. Auth + 2FA, module KYC với form từ CMS, realtime WebSocket (balance, deposit, KYC status), search engine client-side không gọi API mỗi phím." },
+  { name: "SadlierConnect", icon: "📚", role: "Frontend · 2021–2022", desc: "Refactor nền tảng giáo dục Java server-rendered thành React SPA với API layer riêng, team 15 người. Redux, styled-components, Ant Design." },
 ];
 
 export type Repo = { name: string; url: string; demo?: string; desc: string };

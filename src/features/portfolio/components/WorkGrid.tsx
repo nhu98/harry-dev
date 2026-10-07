@@ -6,7 +6,8 @@ export function WorkGrid() {
     <div className={styles.grid.three}>
       {WORK.map((w) => (
         <Card as="article" key={w.name}>
-          <H3>{w.name}</H3>
+          <div className="text-3xl">{w.icon}</div>
+          <H3 className="mt-2">{w.name}</H3>
           <Muted size="xs" className="mt-0.5">{w.role}</Muted>
           <p className="text-sm mt-2 leading-relaxed">{w.desc}</p>
         </Card>

@@ -16,3 +16,8 @@ paths:
 - Mobile-first: thử ở 375px trước. Bảng/code rộng phải cuộn ngang trong container, body không cuộn ngang.
 - Client component (`"use client"`) chỉ khi cần state/effect/localStorage. State từ localStorage đọc qua `useSyncExternalStore` (xem `shared/lib/storage.ts`), không `setState` trong `useEffect`.
 - Nối class bằng `cn()` từ `@/shared/lib/cn`.
+
+## Thư viện nặng (Three.js, chart…)
+- Chỉ `import()` động bên trong `useEffect` của client component, không import tĩnh ở đầu file. Mẫu: `features/portfolio/components/Hero3D.tsx`.
+- Luôn: cleanup (dispose geometry/material/renderer, cancelAnimationFrame, remove listeners) và tôn trọng `prefers-reduced-motion`.
+- Không chặn nội dung: canvas là nền (`pointer-events-none`), chữ nằm trên.
