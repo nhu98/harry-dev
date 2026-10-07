@@ -16,9 +16,9 @@ export const SYSTEM: Record<Exclude<Mode, "image">, string> = {
   ].join(" "),
 };
 
-export const MODELS = {
-  text: "gemini-3.8-flash",
-  image: "gemini-3.1-flash-image",
-} as const;
+/** Text models in preference order; the service falls through on 404/429/503. */
+export const TEXT_MODELS = ["gemini-3.8-flash", "gemini-3.5-flash", "gemini-flash-latest"] as const;
+/** Image generation needs a billed Gemini API project (free tier quota is 0). */
+export const IMAGE_MODEL = "gemini-3.1-flash-image";
 
 export const DOC_CONTEXT_LIMIT = 40_000; // characters of markdown injected as context

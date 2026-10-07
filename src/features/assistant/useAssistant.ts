@@ -12,7 +12,7 @@ export function useAssistant() {
   const [messages, setMessages] = useState<Message[]>([]);
   const [password, setPasswordState] = useState<string>(() => readJson<string>(PASSWORD_KEY, ""));
   const [loading, setLoading] = useState(false);
-  const [error, setError] = useState<"no_key" | "auth" | "generic" | null>(null);
+  const [error, setError] = useState<"no_key" | "auth" | "quota" | "busy" | "generic" | null>(null);
 
   const setPassword = (p: string) => { setPasswordState(p); writeJson(PASSWORD_KEY, p); };
   const changeMode = (m: Mode) => { setMode(m); setMessages([]); setError(null); };
@@ -32,7 +32,11 @@ export function useAssistant() {
         body: JSON.stringify({ mode, messages: next, docSlug: mode === "ask" && docSlug ? docSlug : undefined }),
       });
       const data = (await res.json()) as AssistantResponse;
-      if (!res.ok) { setError(data.error === "no_key" ? "no_key" : data.error === "auth" ? "auth" : "generic"); return; }
+      if (!res.ok) {
+        const known = ["no_key", "auth", "quota", "busy"] as const;
+        setError((known as readonly string[]).includes(data.error ?? "") ? (data.error as (typeof known)[number]) : "generic");
+        return;
+      }
       setMessages([...next, { role: "model", text: data.text ?? "", imageDataUrl: data.imageDataUrl }]);
     } catch {
       setError("generic");

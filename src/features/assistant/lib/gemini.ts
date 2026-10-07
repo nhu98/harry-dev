@@ -9,13 +9,20 @@ function toContents(messages: Message[]) {
   return messages.map((m) => ({ role: m.role, parts: [{ text: m.text }] as Part[] }));
 }
 
+export class GeminiError extends Error {
+  constructor(public status: number, message: string) { super(message); }
+}
+
+/** Statuses worth retrying with the next model: missing model, quota, overloaded. */
+export const RETRYABLE = new Set([404, 429, 503]);
+
 async function call(model: string, body: unknown, apiKey: string) {
   const res = await fetch(`${BASE}/${model}:generateContent?key=${apiKey}`, {
     method: "POST",
     headers: { "content-type": "application/json" },
     body: JSON.stringify(body),
   });
-  if (!res.ok) throw new Error(`Gemini ${res.status}: ${(await res.text()).slice(0, 300)}`);
+  if (!res.ok) throw new GeminiError(res.status, `Gemini ${model} ${res.status}: ${(await res.text()).slice(0, 300)}`);
   const json = (await res.json()) as { candidates?: { content?: { parts?: Part[] } }[] };
   return json.candidates?.[0]?.content?.parts ?? [];
 }

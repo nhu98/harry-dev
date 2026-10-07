@@ -1,5 +1,5 @@
 import { NextResponse } from "next/server";
-import { runAssistant } from "@/features/assistant/service";
+import { errorCode, runAssistant } from "@/features/assistant/service";
 import type { AssistantRequest } from "@/features/assistant/types";
 
 export async function POST(req: Request) {
@@ -18,6 +18,6 @@ export async function POST(req: Request) {
     return NextResponse.json(await runAssistant(body, apiKey));
   } catch (e) {
     console.error(e);
-    return NextResponse.json({ error: "upstream" }, { status: 502 });
+    return NextResponse.json({ error: errorCode(e) }, { status: 502 });
   }
 }

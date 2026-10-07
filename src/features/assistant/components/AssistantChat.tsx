@@ -12,7 +12,7 @@ export function AssistantChat({ docs }: { docs: DocMeta[] }) {
   const a = useAssistant();
   const [draft, setDraft] = useState("");
   const t = STRINGS.assistant;
-  const errorText = a.error === "no_key" ? t.errorNoKey : a.error === "auth" ? t.errorAuth : a.error ? t.errorGeneric : null;
+  const errorText = a.error ? (a.error === "generic" ? t.errorGeneric : t.errors[a.error]) : null;
 
   const submit = () => { a.send(draft); setDraft(""); };
 

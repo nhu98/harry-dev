@@ -73,8 +73,12 @@ export const STRINGS = {
     passwordLabel: "Mật khẩu trợ lý",
     passwordHint: "Nhập một lần, lưu trên máy này.",
     placeholder: { ask: "Ví dụ: giải thích useSyncExternalStore bằng tiếng Việt đơn giản", english: "Viết tiếng Anh, tôi sẽ sửa lỗi và hỏi tiếp", image: "Mô tả ảnh, ví dụ: sơ đồ luồng JWT refresh, phong cách tối giản" },
-    errorNoKey: "Server chưa có GEMINI_API_KEY. Thêm biến môi trường trên Vercel rồi deploy lại.",
-    errorAuth: "Sai mật khẩu.",
+    errors: {
+      no_key: "Server chưa có GEMINI_API_KEY. Thêm biến môi trường trên Vercel rồi deploy lại.",
+      auth: "Sai mật khẩu.",
+      quota: "Hết hạn mức. Tạo ảnh cần bật billing cho Gemini API (aistudio.google.com → Set up billing). Hỏi đáp và tiếng Anh vẫn dùng được.",
+      busy: "Gemini đang quá tải. Thử lại sau vài giây.",
+    },
     errorGeneric: "Có lỗi khi gọi Gemini. Thử lại.",
   },
   phrases: {
