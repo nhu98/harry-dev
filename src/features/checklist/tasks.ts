@@ -1,6 +1,6 @@
 export type Task = { id: string; label: string; time: string; min?: boolean };
 
-// Mirrors the 🔴 (minimum) and normal items in E5. Minimum items are enough on a lazy day.
+/** Mirrors E5. `min` = 🔴 minimum items: enough on a lazy day. */
 export const TASKS: Task[] = [
   { id: "listen-am", label: "Bật loa 1 tập BBC 6 Minute English khi sửa soạn", time: "8h00" },
   { id: "product-3-lines", label: "3 dòng Product trước task đầu tiên (user goal / simpler way / 1 câu hỏi cho PO)", time: "Sáng", min: true },
@@ -13,3 +13,5 @@ export const TASKS: Task[] = [
   { id: "speak", label: "20 phút NÓI (voice với AI / chuẩn bị lớp)", time: "19h40", min: true },
   { id: "lights", label: "Tắt đèn trước 24h", time: "23h30", min: true },
 ];
+
+export const MIN_TASKS = TASKS.filter((t) => t.min);

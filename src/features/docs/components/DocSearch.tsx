@@ -1,7 +1,7 @@
 "use client";
 import Link from "next/link";
 import { useMemo, useState } from "react";
-import type { DocMeta } from "@/lib/content";
+import type { DocMeta } from "../types";
 
 export function DocSearch({ docs }: { docs: DocMeta[] }) {
   const [q, setQ] = useState("");
