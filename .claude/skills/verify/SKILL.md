@@ -8,6 +8,7 @@ Chạy lần lượt, dừng ở bước đầu tiên lỗi và sửa:
 ```!
 pnpm lint 2>&1 | tail -5
 pnpm exec tsc --noEmit 2>&1 | head -10
+pnpm check:inline 2>&1 | tail -5
 pnpm build 2>&1 | grep -E "✓ Generating|Error|error" | head -5
 grep -rlE "Allan|Oleg|Tôn Nguyễn|IMT Solutions" content/ src/ || echo "privacy: ok"
 ```

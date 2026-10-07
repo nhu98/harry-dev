@@ -1,9 +1,10 @@
 import type { HTMLAttributes } from "react";
 import { cn } from "@/shared/lib/cn";
+import { styles } from "./styles";
 
-type Props = HTMLAttributes<HTMLElement> & { as?: "div" | "article" | "li" | "section" };
+type Props = HTMLAttributes<HTMLElement> & { as?: "div" | "article" | "li" | "section"; padded?: boolean };
 
-/** Bordered surface. Use `as` to render as article/li/section when semantics matter. */
-export function Card({ className, as: Tag = "div", ...rest }: Props) {
-  return <Tag className={cn("rounded-lg border border-border bg-card p-4", className)} {...rest} />;
+/** Bordered surface. `as` picks the tag; `padded={false}` for custom padding. */
+export function Card({ className, as: Tag = "div", padded = true, ...rest }: Props) {
+  return <Tag className={cn(padded ? styles.surface.cardPadded : styles.surface.card, className)} {...rest} />;
 }

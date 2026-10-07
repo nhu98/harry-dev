@@ -6,7 +6,8 @@ Kiến trúc chi tiết: `ARCHITECTURE.md` (đọc trước khi thêm/sửa code
 ```bash
 pnpm dev          # http://localhost:3000
 pnpm sync         # copy allowlist ../*.md → content/ (redact tên người)
-pnpm lint && pnpm exec tsc --noEmit && pnpm build   # phải sạch trước khi commit
+pnpm check       # lint + tsc + check:inline, phải sạch trước khi commit
+pnpm build
 ```
 
 ## Luật cứng
@@ -14,7 +15,8 @@ pnpm lint && pnpm exec tsc --noEmit && pnpm build   # phải sạch trước khi
 - Import một chiều: app → features → shared. `shared/` không import `features/`. Feature khác chỉ dùng qua `service.ts`.
 - Nội dung riêng tư (tên sếp/PO/PM, lương, CV) không được vào repo này. Chỉ thêm file vào web bằng cách sửa allowlist trong `scripts/sync-content.mjs`.
 - Next 16 bật `cacheComponents`: không gọi `new Date()`/`Math.random()` trong server component hay lúc render; đưa vào client hook hoặc hằng số. Không dùng `dynamicParams`.
+- **Không inline**: class dài → `shared/ui/styles.ts` hoặc component `shared/ui`; chữ → `config/strings.ts`; route → `SITE.routes`. `pnpm check:inline` phải ok.
 - Đơn giản trước: không thêm thư viện khi 20 dòng code tự viết là đủ.
 
 ## Skills (gõ `/tên`)
-`/add-feature`, `/verify`, `/sync-content`, `/add-phrases`, `/upgrade-check`. Xem `.claude/skills/`.
+`/add-feature`, `/verify`, `/extract-inline`, `/sync-content`, `/add-phrases`, `/upgrade-check`. Xem `.claude/skills/`.

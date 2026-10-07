@@ -1,10 +1,11 @@
 import type { ReactNode } from "react";
+import { H1, Muted } from "./Heading";
 
 export function PageHeader({ title, description, children }: { title: string; description?: string; children?: ReactNode }) {
   return (
     <div>
-      <h1 className="text-2xl font-bold">{title}</h1>
-      {description && <p className="text-sm text-muted mt-1">{description}</p>}
+      <H1>{title}</H1>
+      {description && <Muted className="mt-1">{description}</Muted>}
       {children && <div className="mt-4">{children}</div>}
     </div>
   );

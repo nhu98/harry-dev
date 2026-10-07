@@ -1,13 +1,14 @@
 import type { Metadata } from "next";
+import { STRINGS } from "@/config/strings";
 import { PageHeader } from "@/shared/ui";
 import { Flashcards } from "@/features/phrases/components/Flashcards";
 
-export const metadata: Metadata = { title: "Câu mẫu tiếng Anh" };
+export const metadata: Metadata = { title: STRINGS.phrases.title };
 
 export default function PhrasesPage() {
   return (
     <div className="max-w-2xl">
-      <PageHeader title="Câu mẫu tiếng Anh đi làm" description="Câu ngắn, mức A2. Chạm thẻ để lật. Đọc to 5 lần mỗi câu." />
+      <PageHeader title={STRINGS.phrases.title} description={STRINGS.phrases.description} />
       <Flashcards />
     </div>
   );

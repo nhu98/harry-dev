@@ -7,10 +7,12 @@ export const SITE = {
   description: "Kho kiến thức Frontend / React Native / tiếng Anh cho dev, và portfolio của Harry Huynh.",
   github: "https://github.com/nhu98",
   year: 2026,
+  /** Route table. Labels come from STRINGS.nav so copy stays in one place. */
   nav: [
-    { href: "/", label: "Trang chủ" },
-    { href: "/docs", label: "Kiến thức" },
-    { href: "/checklist", label: "Checklist" },
-    { href: "/phrases", label: "Câu mẫu EN" },
+    { href: "/", key: "home" },
+    { href: "/docs", key: "docs" },
+    { href: "/checklist", key: "checklist" },
+    { href: "/phrases", key: "phrases" },
   ],
+  routes: { docs: (slug: string) => `/docs/${slug}`, docsGroup: (g: string) => `/docs#group-${g}` },
 } as const;

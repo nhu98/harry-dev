@@ -1,21 +1,21 @@
-import Link from "next/link";
+import { SITE } from "@/config/site";
+import { STRINGS } from "@/config/strings";
+import { List, ListRow, styles } from "@/shared/ui";
 import type { DocMeta } from "../types";
 
 export function DocList({ docs }: { docs: DocMeta[] }) {
   return (
-    <ul className="divide-y divide-border rounded-lg border border-border bg-card">
+    <List>
       {docs.map((d) => (
-        <li key={d.slug}>
-          <Link href={`/docs/${d.slug}`} className="flex gap-3 px-4 py-3 hover:bg-accent/5">
-            <span className="font-mono text-xs text-accent pt-1 w-7 shrink-0">{d.code}</span>
-            <span className="min-w-0">
-              <span className="block font-medium">{d.title}</span>
-              <span className="block text-sm text-muted line-clamp-2">{d.summary}</span>
-              <span className="block text-xs text-muted mt-1">~{d.readMinutes} phút đọc</span>
-            </span>
-          </Link>
-        </li>
+        <ListRow key={d.slug} href={SITE.routes.docs(d.slug)}>
+          <span className={`${styles.text.code} pt-1 w-7 shrink-0`}>{d.code}</span>
+          <span className="min-w-0">
+            <span className="block font-medium">{d.title}</span>
+            <span className={`block ${styles.text.small} line-clamp-2`}>{d.summary}</span>
+            <span className={`block ${styles.text.tiny} mt-1`}>{STRINGS.common.readMinutes(d.readMinutes)}</span>
+          </span>
+        </ListRow>
       ))}
-    </ul>
+    </List>
   );
 }

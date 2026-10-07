@@ -8,7 +8,9 @@
     "start": "next start",
     "lint": "eslint",
     "sync": "node scripts/sync-content.mjs",
-    "prebuild": "node scripts/sync-content.mjs"
+    "prebuild": "node scripts/sync-content.mjs",
+    "check:inline": "node scripts/check-inline.mjs",
+    "check": "pnpm lint && pnpm exec tsc --noEmit && pnpm check:inline"
   },
   "dependencies": {
     "github-slugger": "^2.0.0",

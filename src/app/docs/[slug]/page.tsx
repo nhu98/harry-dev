@@ -1,7 +1,8 @@
-import Link from "next/link";
 import { notFound } from "next/navigation";
 import type { Metadata } from "next";
-import { GROUPS, getAllDocs, getDoc } from "@/features/docs/service";
+import { styles } from "@/shared/ui";
+import { getAllDocs, getDoc } from "@/features/docs/service";
+import { DocBreadcrumb } from "@/features/docs/components/DocBreadcrumb";
 import { DocToc } from "@/features/docs/components/DocToc";
 import { DocArticle } from "@/features/docs/components/DocArticle";
 import { DocPager } from "@/features/docs/components/DocPager";
@@ -22,16 +23,14 @@ export default async function DocPage({ params }: Props) {
   if (!doc) notFound();
   const { meta, html, headings, prev, next } = doc;
   return (
-    <div className="lg:grid lg:grid-cols-[1fr_240px] lg:gap-10">
+    <div className={styles.grid.docLayout}>
       <article className="min-w-0">
-        <p className="text-xs text-muted">
-          <Link href="/docs" className="hover:text-accent">Kiến thức</Link> · {meta.group} {GROUPS[meta.group].name} · ~{meta.readMinutes} phút
-        </p>
-        <div className="lg:hidden"><DocToc headings={headings} /></div>
+        <DocBreadcrumb meta={meta} />
+        <div className="lg:hidden"><DocToc headings={headings} variant="mobile" /></div>
         <DocArticle html={html} />
         <DocPager prev={prev} next={next} />
       </article>
-      <div className="hidden lg:block"><DocToc headings={headings} /></div>
+      <div className="hidden lg:block"><DocToc headings={headings} variant="desktop" /></div>
     </div>
   );
 }

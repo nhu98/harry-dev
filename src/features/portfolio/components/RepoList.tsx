@@ -1,16 +1,17 @@
-import { Card } from "@/shared/ui";
+import { STRINGS } from "@/config/strings";
+import { Badge, Card, Muted, TextLink, styles } from "@/shared/ui";
 import { REPOS } from "../profile";
 
 export function RepoList() {
   return (
-    <ul className="grid gap-3 sm:grid-cols-2">
+    <ul className={styles.grid.two}>
       {REPOS.map((r) => (
         <Card as="li" key={r.name} className="flex items-start justify-between gap-3">
           <div>
-            <a href={r.url} target="_blank" rel="noreferrer" className="font-medium hover:text-accent">{r.name}</a>
-            <p className="text-sm text-muted">{r.desc}</p>
+            <TextLink href={r.url} className="font-medium">{r.name}</TextLink>
+            <Muted>{r.desc}</Muted>
           </div>
-          {r.demo && <a href={r.demo} target="_blank" rel="noreferrer" className="text-xs px-2 py-1 rounded border border-border whitespace-nowrap">Demo ↗</a>}
+          {r.demo && <TextLink href={r.demo}><Badge>{STRINGS.common.demo}</Badge></TextLink>}
         </Card>
       ))}
     </ul>

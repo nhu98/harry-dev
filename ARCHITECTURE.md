@@ -12,10 +12,14 @@ src/
 │   └── phrases/              # /phrases     → features/phrases
 │
 ├── config/
-│   └── site.ts               # Hằng số toàn site: tên, nav, link GitHub, năm. Đổi 1 chỗ, áp dụng mọi nơi.
+│   ├── site.ts               # Hằng số toàn site: tên, route table, link GitHub, năm.
+│   └── strings.ts            # TOÀN BỘ chữ hiển thị. Component không hardcode text.
 │
 ├── shared/                   # Dùng chung, KHÔNG biết gì về feature nào
-│   ├── ui/                   # Button, Card, Badge, PageHeader, Section, Header, Footer (+ index.ts)
+│   ├── ui/
+│   │   ├── styles.ts         # Bộ class dùng chung (layout, text, surface, control, grid...). Không copy class dài inline.
+│   │   ├── Button, ButtonLink, Card, Badge, Input, List/ListRow, TextLink, Stat, H1/H2/H3/Muted, PageHeader, Section, Header, Footer
+│   │   └── index.ts          # Export tất cả. Feature chỉ import từ "@/shared/ui".
 │   └── lib/                  # cn (class names), storage (localStorage + external store), date
 │
 └── features/                 # Mỗi feature tự chứa data + logic + component của nó
@@ -50,6 +54,19 @@ src/
 | **Dependency inversion** | Page phụ thuộc vào `service.ts` (API của feature), không phụ thuộc vào `fs`. Component nhận data qua props. |
 | **Data tách khỏi UI** | Mọi nội dung nằm trong file `.ts` thuần (`profile.ts`, `tasks.ts`, `phrases.ts`), không có JSX. |
 | **Shared chỉ khi dùng chung** | Một thứ dùng ở 1 feature thì để trong feature đó. Dùng ở 2 nơi mới chuyển sang `shared/`. |
+
+## Luật "không inline" (để sửa hàng loạt được)
+
+| Thứ | Không được | Phải để ở |
+|---|---|---|
+| Chuỗi class > 6 token hoặc dùng ≥ 2 nơi | `className="rounded-lg border ... p-4"` trong feature | `shared/ui/styles.ts` hoặc thành component trong `shared/ui` |
+| Chữ hiển thị (label, placeholder, tiêu đề, mô tả) | `<p>Mục lục</p>` | `config/strings.ts` |
+| Đường dẫn route | `` `/docs/${slug}` `` rải rác | `config/site.ts` → `routes` |
+| Màu, kích thước | `#2563eb`, `max-w-6xl` lặp lại | token trong `globals.css` + `styles.layout` |
+| Số "ma thuật" | `slice(0, 8)` | hằng số có tên ở đầu file (`MAX_RESULTS`) |
+| Logic | trong JSX | hook `useX.ts` hoặc `service.ts` |
+
+Class ngắn mang tính bố cục cục bộ (`mt-2`, `flex-1`, `hidden lg:block`) được phép inline. Kiểm tra tự động: `pnpm check:inline` (gọi trong `pnpm check` và skill `/verify`).
 
 ## Luật import (giữ dependency một chiều)
 
