@@ -17,8 +17,8 @@ export const SYSTEM: Record<Exclude<Mode, "image">, string> = {
 };
 
 export const MODELS = {
-  text: "gemini-2.5-flash",
-  image: "gemini-2.5-flash-image",
+  text: "gemini-3.8-flash",
+  image: "gemini-3.1-flash-image",
 } as const;
 
 export const DOC_CONTEXT_LIMIT = 40_000; // characters of markdown injected as context
