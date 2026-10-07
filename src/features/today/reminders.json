@@ -1,16 +1,188 @@
 [
-  { "id": "bbc", "time": "08:00", "minutes": 6, "days": ["MO","TU","WE","TH","FR"], "title": "Bật BBC 6 Minute English khi sửa soạn", "note": "Loa ngoài, không cần hiểu hết." },
-  { "id": "product", "time": "09:20", "minutes": 5, "days": ["MO","TU","WE","TH","FR"], "title": "3 dòng Product trước task đầu tiên", "note": "User goal / Simpler way / 1 câu hỏi cho PO." },
-  { "id": "duolingo", "time": "12:45", "minutes": 10, "days": ["MO","TU","WE","TH","FR","SA","SU"], "title": "Duolingo 10 phút (giữ streak)", "note": "Sau ăn trưa, trước nap. 2 bài là đủ." },
-  { "id": "nap", "time": "13:00", "minutes": 20, "days": ["MO","TU","WE","TH","FR"], "title": "Nap 20 phút", "note": "Báo thức 25 phút." },
-  { "id": "mochi", "time": "13:30", "minutes": 30, "days": ["MO","TU","WE","TH","FR"], "title": "MochiVocab 20 phút + Anki tech 10 phút", "note": "Mochi hết lượt ôn thì mở Anki." },
-  { "id": "video", "time": "14:00", "minutes": 45, "days": ["MO","TU","WE","TH","FR"], "title": "Nghe + nhại 1 video (tai nghe)", "note": "3 lần: 0.75x sub, chép 5 câu, tắt sub. Thì thầm, thu âm." },
-  { "id": "pe", "time": "14:45", "minutes": 45, "days": ["MO","TU","WE","TH","FR"], "title": "Khối Product Engineer", "note": "T2/T4 endpoint · T3/T5 brag doc + câu hỏi PO · T6 /weekly-review." },
-  { "id": "chat", "time": "15:30", "minutes": 45, "days": ["MO","TU","WE","TH","FR"], "title": "Chat gõ chữ EN với AI", "note": "Mở Trợ lý AI chế độ Gia sư. 10 lượt." },
-  { "id": "diary", "time": "17:35", "minutes": 5, "days": ["MO","TU","WE","TH","FR"], "title": "Nhật ký 3 câu EN", "note": "Today I… / The hardest part… / Tomorrow I will…" },
-  { "id": "speak", "time": "19:40", "minutes": 20, "days": ["TU","WE"], "title": "Nói 20 phút với AI (voice)", "note": "Đọc 5 câu, nói 10 phút, hỏi 3 lỗi." },
-  { "id": "class-prep", "time": "19:40", "minutes": 15, "days": ["MO","TH"], "title": "Chuẩn bị lớp giao tiếp", "note": "Lớp 20h–21h. Điền template E6 §7." },
-  { "id": "class", "time": "20:00", "minutes": 60, "days": ["MO","TH"], "title": "Lớp giao tiếp", "note": "Mang 3 câu small talk." },
-  { "id": "weekend-vocab", "time": "09:30", "minutes": 10, "days": ["SA","SU"], "title": "MochiVocab 10 phút khi dậy", "note": "Giữ chuỗi là thắng." },
-  { "id": "lights", "time": "23:30", "minutes": 5, "days": ["SU","MO","TU","WE","TH"], "title": "Rời màn hình, tắt đèn trước 24h", "note": "Nghe podcast dễ cho buồn ngủ." }
+  {
+    "id": "bbc",
+    "time": "08:00",
+    "minutes": 6,
+    "days": [
+      "MO",
+      "TU",
+      "WE",
+      "TH",
+      "FR"
+    ],
+    "title": "Bật BBC 6 Minute English khi sửa soạn",
+    "note": "Loa ngoài, không cần hiểu hết."
+  },
+  {
+    "id": "product",
+    "time": "09:20",
+    "minutes": 5,
+    "days": [
+      "MO",
+      "TU",
+      "WE",
+      "TH",
+      "FR"
+    ],
+    "title": "3 dòng Product trước task đầu tiên",
+    "note": "User goal / Simpler way / 1 câu hỏi cho PO."
+  },
+  {
+    "id": "duolingo",
+    "time": "12:45",
+    "minutes": 10,
+    "days": [
+      "MO",
+      "TU",
+      "WE",
+      "TH",
+      "FR",
+      "SA",
+      "SU"
+    ],
+    "title": "Duolingo 10 phút (giữ streak)",
+    "note": "Sau ăn trưa, trước nap. 2 bài là đủ."
+  },
+  {
+    "id": "nap",
+    "time": "13:00",
+    "minutes": 20,
+    "days": [
+      "MO",
+      "TU",
+      "WE",
+      "TH",
+      "FR"
+    ],
+    "title": "Nap 20 phút",
+    "note": "Báo thức 25 phút."
+  },
+  {
+    "id": "mochi",
+    "time": "13:30",
+    "minutes": 30,
+    "days": [
+      "MO",
+      "TU",
+      "WE",
+      "TH",
+      "FR"
+    ],
+    "title": "MochiVocab 20 phút + Anki tech 10 phút",
+    "note": "Mochi hết lượt ôn thì mở Anki."
+  },
+  {
+    "id": "video",
+    "time": "14:00",
+    "minutes": 45,
+    "days": [
+      "MO",
+      "TU",
+      "WE",
+      "TH",
+      "FR"
+    ],
+    "title": "Nghe + chép 1 video (tai nghe, im lặng)",
+    "note": "3 lần: 0.75x sub, chép 5 câu, tắt sub. Nạp 3 từ Anki."
+  },
+  {
+    "id": "pe",
+    "time": "14:45",
+    "minutes": 45,
+    "days": [
+      "MO",
+      "TU",
+      "WE",
+      "TH",
+      "FR"
+    ],
+    "title": "Khối Product Engineer",
+    "note": "T2/T4 endpoint · T3/T5 brag doc + câu hỏi PO · T6 /weekly-review."
+  },
+  {
+    "id": "chat",
+    "time": "15:30",
+    "minutes": 45,
+    "days": [
+      "MO",
+      "TU",
+      "WE",
+      "TH",
+      "FR"
+    ],
+    "title": "Chat gõ chữ EN với AI",
+    "note": "Mở Trợ lý AI chế độ Gia sư. 10 lượt."
+  },
+  {
+    "id": "diary",
+    "time": "17:35",
+    "minutes": 5,
+    "days": [
+      "MO",
+      "TU",
+      "WE",
+      "TH",
+      "FR"
+    ],
+    "title": "Nhật ký 3 câu EN",
+    "note": "Today I… / The hardest part… / Tomorrow I will…"
+  },
+  {
+    "id": "speak",
+    "time": "19:40",
+    "minutes": 20,
+    "days": [
+      "TU",
+      "WE"
+    ],
+    "title": "Ở nhà: nhại 5 câu + nói với AI",
+    "note": "Nhại to, thu âm, nghe lại. Rồi voice với AI 15 phút."
+  },
+  {
+    "id": "class-prep",
+    "time": "19:40",
+    "minutes": 15,
+    "days": [
+      "MO",
+      "TH"
+    ],
+    "title": "Chuẩn bị lớp giao tiếp",
+    "note": "Lớp 20h–21h. Điền template E6 §7."
+  },
+  {
+    "id": "class",
+    "time": "20:00",
+    "minutes": 60,
+    "days": [
+      "MO",
+      "TH"
+    ],
+    "title": "Lớp giao tiếp",
+    "note": "Mang 3 câu small talk."
+  },
+  {
+    "id": "weekend-vocab",
+    "time": "09:30",
+    "minutes": 10,
+    "days": [
+      "SA",
+      "SU"
+    ],
+    "title": "MochiVocab 10 phút khi dậy",
+    "note": "Giữ chuỗi là thắng."
+  },
+  {
+    "id": "lights",
+    "time": "23:30",
+    "minutes": 5,
+    "days": [
+      "SU",
+      "MO",
+      "TU",
+      "WE",
+      "TH"
+    ],
+    "title": "Rời màn hình, tắt đèn trước 24h",
+    "note": "Nghe podcast dễ cho buồn ngủ."
+  }
 ]

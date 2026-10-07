@@ -8,7 +8,7 @@ import type { Mode } from "../types";
 
 const MODES: Mode[] = ["ask", "english", "image"];
 
-export function AssistantChat({ docs }: { docs: DocMeta[] }) {
+export function AssistantChat({ docs, compact = false }: { docs: DocMeta[]; compact?: boolean }) {
   const a = useAssistant();
   const [draft, setDraft] = useState("");
   const t = STRINGS.assistant;
@@ -17,7 +17,7 @@ export function AssistantChat({ docs }: { docs: DocMeta[] }) {
   const submit = () => { a.send(draft); setDraft(""); };
 
   return (
-    <div className="mt-5 space-y-4">
+    <div className={compact ? "mt-2 space-y-3" : "mt-5 space-y-4"}>
       <div className={styles.control.chipRow}>
         {MODES.map((m) => (
           <button key={m} onClick={() => a.changeMode(m)}><Badge active={a.mode === m}>{t.modes[m]}</Badge></button>
@@ -41,7 +41,7 @@ export function AssistantChat({ docs }: { docs: DocMeta[] }) {
         <Muted size="xs">{t.passwordHint}</Muted>
       </div>
 
-      <div className={styles.chat.log}>
+      <div className={compact ? styles.chat.logCompact : styles.chat.log}>
         {a.messages.map((m, i) => (
           <div key={i} className={m.role === "user" ? styles.chat.user : styles.chat.bot}>
             {m.text}

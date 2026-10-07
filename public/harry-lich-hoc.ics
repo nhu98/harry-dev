@@ -80,11 +80,11 @@ DTSTAMP:20261007T000000Z
 DTSTART;TZID=Asia/Ho_Chi_Minh:20261008T140000
 DTEND;TZID=Asia/Ho_Chi_Minh:20261008T144500
 RRULE:FREQ=WEEKLY;BYDAY=MO,TU,WE,TH,FR
-SUMMARY:Nghe + nhại 1 video (tai nghe)
-DESCRIPTION:3 lần: 0.75x sub\, chép 5 câu\, tắt sub. Thì thầm\, thu âm.
+SUMMARY:Nghe + chép 1 video (tai nghe\, im lặng)
+DESCRIPTION:3 lần: 0.75x sub\, chép 5 câu\, tắt sub. Nạp 3 từ Anki.
 BEGIN:VALARM
 ACTION:DISPLAY
-DESCRIPTION:Nghe + nhại 1 video (tai nghe)
+DESCRIPTION:Nghe + chép 1 video (tai nghe\, im lặng)
 TRIGGER:-PT0M
 END:VALARM
 END:VEVENT
@@ -136,11 +136,11 @@ DTSTAMP:20261007T000000Z
 DTSTART;TZID=Asia/Ho_Chi_Minh:20261008T194000
 DTEND;TZID=Asia/Ho_Chi_Minh:20261008T200000
 RRULE:FREQ=WEEKLY;BYDAY=TU,WE
-SUMMARY:Nói 20 phút với AI (voice)
-DESCRIPTION:Đọc 5 câu\, nói 10 phút\, hỏi 3 lỗi.
+SUMMARY:Ở nhà: nhại 5 câu + nói với AI
+DESCRIPTION:Nhại to\, thu âm\, nghe lại. Rồi voice với AI 15 phút.
 BEGIN:VALARM
 ACTION:DISPLAY
-DESCRIPTION:Nói 20 phút với AI (voice)
+DESCRIPTION:Ở nhà: nhại 5 câu + nói với AI
 TRIGGER:-PT0M
 END:VALARM
 END:VEVENT

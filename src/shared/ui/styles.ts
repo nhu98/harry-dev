@@ -47,10 +47,16 @@ export const styles = {
   },
   chat: {
     log: "space-y-3 max-h-[60vh] overflow-y-auto pr-1",
+    logCompact: "space-y-3 max-h-[40vh] overflow-y-auto pr-1",
     user: "ml-auto max-w-[85%] rounded-xl bg-accent text-white px-3 py-2 text-sm whitespace-pre-wrap",
     bot: "mr-auto max-w-[85%] rounded-xl border border-border bg-card px-3 py-2 text-sm whitespace-pre-wrap",
     textarea: "w-full rounded-md border border-border bg-card px-3 py-2 text-sm outline-none focus:border-accent min-h-20 resize-y",
     select: "rounded-md border border-border bg-card px-2 py-1.5 text-sm",
+  },
+  bubble: {
+    button: "fixed bottom-4 right-4 z-30 rounded-full bg-accent text-white shadow-lg px-4 py-3 text-sm font-medium active:scale-95 transition",
+    panel: "fixed z-30 bottom-0 right-0 w-full sm:bottom-4 sm:right-4 sm:w-[400px] max-h-[85vh] overflow-y-auto rounded-t-2xl sm:rounded-2xl border border-border bg-background shadow-2xl p-4",
+    panelHeader: "flex items-center justify-between gap-2 mb-1",
   },
   pager: "mt-10 flex justify-between gap-4 text-sm border-t border-border pt-4",
   flashcard: "min-h-44 p-6 flex flex-col justify-center shadow-sm active:scale-[0.99] transition",

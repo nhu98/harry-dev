@@ -76,6 +76,9 @@ export const STRINGS = {
     docPickerLabel: "Hỏi về tài liệu",
     passwordLabel: "Mật khẩu trợ lý",
     passwordHint: "Nhập một lần, lưu trên máy này.",
+    bubbleOpen: "Hỏi trợ lý",
+    bubbleClose: "Đóng",
+    bubbleFull: "Mở trang đầy đủ →",
     placeholder: { ask: "Ví dụ: giải thích useSyncExternalStore bằng tiếng Việt đơn giản", english: "Viết tiếng Anh, tôi sẽ sửa lỗi và hỏi tiếp", image: "Mô tả ảnh, ví dụ: sơ đồ luồng JWT refresh, phong cách tối giản" },
     errors: {
       no_key: "Server chưa có GEMINI_API_KEY. Thêm biến môi trường trên Vercel rồi deploy lại.",

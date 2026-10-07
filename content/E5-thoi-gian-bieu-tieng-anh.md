@@ -26,7 +26,7 @@
 | 12h45–12h55 | 🔴 **Duolingo 10 phút** (2 bài, giữ streak) | app trên iPhone |
 | 13h00–13h25 | 🔴 **Nap 20 phút** | — |
 | 13h30–14h00 | 🔴 **MochiVocab 20p + deck Anki tech 10p** (dời từ sáng xuống đây vì sáng bận) | nếu sáng đã làm thì bỏ qua |
-| 14h00–14h45 | **Tiếng Anh khối 1 — NGHE + NHẠI (tai nghe):** 1 video tech 8–12p (E6 §9) xem 3 lần: lần 1 sub EN, lần 2 chép 5 câu hay, lần 3 tắt sub. Rồi **shadowing thì thầm** 10p theo 5 câu đó, thu âm bằng điện thoại | 🔴 chỉ cần lần 1 + 3 câu |
+| 14h00–14h45 | **Tiếng Anh khối 1 — NGHE + CHÉP (tai nghe, im lặng):** 1 video tech 8–12p (E6 §9) xem 3 lần: lần 1 sub EN, lần 2 chép 5 câu hay, lần 3 tắt sub. Nạp 3 từ vào Anki. **Không nhại, không thu âm ở công ty**, phần đó để tối ở nhà | 🔴 chỉ cần lần 1 + 3 câu |
 | 14h45–15h30 | **Product Engineer khối (E8 §4):** T2/T4 = đọc 1 endpoint Rails với AI làm gia sư · T3/T5 = viết/ghi brag doc + soạn 1 câu hỏi/đề xuất cho PO bằng EN · T6 = tổng kết tuần | 🔴 10 phút brag doc |
 | 15h30–16h15 | **Tiếng Anh khối 2 — VIẾT + CHAT (im lặng được):** chat **gõ chữ** với AI bằng EN theo đề E7 Kho 2 (prompt E6 §8, bỏ voice), AI sửa lỗi · hoặc đọc 1 hội thoại E7 Kho 6 · hoặc viết PR description / tin nhắn cho PO bằng EN | — |
 | 16h15–17h30 | Đệm cho công việc. Rảnh thì đọc docs EN, nạp 5 từ vào Anki | — |
@@ -45,7 +45,7 @@
 
 ## 2. Buổi tối 19h40–20h00: chỉ NÓI
 
-- **T3 & T4:** nói to lại 5 câu đã thì thầm buổi chiều (5p) + nói với AI bằng **voice** 1 đề E7 Kho 2 (15p). Buổi chiều bạn đã chuẩn bị rồi, tối chỉ "phát ra tiếng".
+- **T3 & T4:** nhại to 5 câu đã chép buổi chiều, thu âm, nghe lại (5p) + nói với AI bằng **voice** 1 đề E7 Kho 2 (15p). Chiều đã chọn câu, tối chỉ việc phát ra tiếng.
 - **T2 & T5:** 15p điền template chuẩn bị lớp (E6 §7). Sau lớp: ghi 3 lỗi bị sửa + 3 từ mới vào Anki.
 - **T6:** không gì hết.
 
@@ -78,7 +78,7 @@ Mở https://harry-dev-lemon.vercel.app/harry-lich-hoc.ics trên iPhone → "Th�
 ## 5. Luật chơi (dán lên màn hình)
 
 1. Sáng là của công việc. Chiều là của bạn. Không học sáng, không cắn rứt.
-2. Tiếng Anh ở công ty = **tai nghe + thì thầm + gõ chữ**. Phát ra tiếng để tối.
+2. Tiếng Anh ở công ty = **nghe + đọc + viết**, hoàn toàn im lặng. Nhại, thu âm, nói với AI chỉ làm ở nhà 19h40.
 3. Ngày lười: làm dòng 🔴. Không bỏ 2 ngày liên tiếp.
 4. Dùng AI ở công ty theo luật mới: **"giải thích cho tôi" trước, "viết cho tôi" sau** (E8 §4).
 5. Sau 21h chơi. Tắt đèn trước 24h.

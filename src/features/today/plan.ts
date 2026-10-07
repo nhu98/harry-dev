@@ -38,11 +38,11 @@ const duo: Block = { time: "12h45", title: "Duolingo 10 phút", how: "Sau ăn tr
 const vocab: Block = { time: "13h30", title: "MochiVocab 20p + Anki tech 10p", how: "Mochi hết lượt ôn thì mở Anki.", links: [LINKS.mochi, LINKS.anki] };
 const weekendVocab: Block = { time: "9h30", title: "MochiVocab 10 phút khi dậy + Duolingo", how: "Nằm trên giường làm cũng được. Giữ chuỗi là thắng.", links: [LINKS.mochi, LINKS.duolingo] };
 const video = (channel: { label: string; href: string }, hint: string): Block => ({
-  time: "14h00", title: "Nghe + nhại 45 phút (tai nghe)", how: `${hint} Lần 1 sub 0.75x, lần 2 chép 5 câu, lần 3 tắt sub. Thì thầm 5 câu, thu âm.`, links: [channel, LINKS.guideVideo, LINKS.youglish],
+  time: "14h00", title: "Nghe + chép 45 phút (tai nghe, im lặng)", how: `${hint} Lần 1 sub 0.75x, lần 2 chép 5 câu hay vào ghi chú, lần 3 tắt sub. Nạp 3 từ vào Anki. Phần nhại để tối ở nhà.`, links: [channel, LINKS.guideVideo],
 });
 const chat = (topic: string): Block => ({ time: "15h30", title: "Chat gõ chữ với AI bằng EN", how: `Đề hôm nay: "${topic}". Gõ tay 10 lượt, cuối buổi xin bảng 3 lỗi.`, links: [LINKS.assistant, LINKS.guideChat, LINKS.e7k2] });
 const diary: Block = { time: "17h35", title: "Nhật ký 3 câu EN", how: "Today I… / The hardest part was… / Tomorrow I will…", links: [LINKS.e7k3] };
-const speak: Block = { time: "19h40", title: "Nói 20 phút với AI (voice)", how: "Đọc to 5 câu đã nhại, rồi nói 10 phút. Cuối hỏi 3 lỗi lớn nhất.", links: [LINKS.guideSpeak] };
+const speak: Block = { time: "19h40", title: "Ở nhà: nhại + nói 20 phút", how: "5 phút nhại to 5 câu đã chép chiều nay (thu âm, nghe lại). 15 phút voice với AI. Cuối hỏi 3 lỗi lớn nhất.", links: [LINKS.guideSpeak, LINKS.youglish] };
 const classPrep: Block = { time: "19h40", title: "Chuẩn bị lớp 15 phút", how: "Điền template: chủ đề + 5 câu định nói + 3 câu small talk. Lớp 20h–21h.", links: [LINKS.guideClass] };
 const lights: Block = { time: "23h30", title: "Tắt đèn trước 24h", how: "Rời màn hình 23h30. Nghe podcast dễ cho buồn ngủ.", links: [] };
 

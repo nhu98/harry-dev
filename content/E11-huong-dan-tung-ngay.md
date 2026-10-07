@@ -12,7 +12,7 @@
 |---|---|---|---|
 | 12h45 | Duolingo 10 phút | App Duolingo trên iPhone, 2 bài | Streak còn sống |
 | 13h30 | Từ vựng 20 phút | App MochiVocab (khoá đang học) → xong thì mở Anki deck tech | Mochi báo hết lượt ôn hôm nay |
-| 14h00 | Nghe + nhại 15 phút | 1 video ở mục 2 | Thu âm được 3 câu nhại trong điện thoại |
+| 14h00 | Nghe + chép 15 phút | 1 video ở mục 2 | Chép được 3 câu vào ghi chú |
 | 19h40 | Nói 10 phút | Mục 5, bước "voice với AI" | Nói được 1 phút không dừng quá 5 giây |
 
 ---
@@ -26,7 +26,7 @@
 
 ---
 
-## 2. 14h00 — Tiếng Anh khối 1: NGHE + NHẠI với tai nghe (45 phút)
+## 2. 14h00 — Tiếng Anh khối 1: NGHE + CHÉP với tai nghe (45 phút, im lặng, ở công ty)
 
 ### 2.1. Chọn video (2 phút)
 Chọn **một** kênh dưới đây, chọn video 8–12 phút, có phụ đề EN (bấm CC). Mỗi tuần một kênh để quen giọng.
@@ -46,16 +46,16 @@ Gợi ý tuần đầu (8–12/10): Web Dev Simplified, tìm trong kênh video c
 2. **Lần 2, sub EN, tốc độ 1.0.** Dừng ở 5 câu bạn thấy hay hoặc hay dùng khi đi làm. Chép 5 câu đó vào ghi chú điện thoại (Apple Notes / Google Keep), ghi kèm phút giây.
 3. **Lần 3, tắt sub, tốc độ 1.0.** Nghe xem còn hiểu bao nhiêu. Không cần hiểu hết.
 
-### 2.3. Nhại thì thầm (10 phút)
-- Mở lại 5 câu ở phút giây đã ghi. Mỗi câu: nghe → dừng → thì thầm theo đúng ngữ điệu (lên xuống giọng) → nghe lại → thì thầm lại. 3 lần mỗi câu.
-- Bật ghi âm điện thoại (Voice Memos), thì thầm 5 câu liên tiếp. Nghe lại 1 lần.
-- Từ nào không biết đọc: mở https://youglish.com, gõ từ đó, nghe 3 người thật nói.
+### 2.3. Đọc hiểu 5 câu đã chép (10 phút, im lặng)
+- Với mỗi câu: tra nghĩa từ lạ, đánh dấu chỗ nhấn giọng (nghe lại đoạn đó 2 lần). Chỉ nghe, không phát ra tiếng.
+- Từ nào không biết đọc: mở https://youglish.com, gõ từ đó, nghe 3 người thật nói (tai nghe).
+- 5 câu này là "bài tập về nhà" cho 19h40: tối sẽ nhại to và thu âm.
 
 ### 2.4. Nạp từ (3 phút)
 - 3–5 từ mới từ video → thêm vào Anki (app https://apps.ankiweb.net trên máy, hoặc https://ankiweb.net trên điện thoại). Thẻ mặt trước: từ + câu trong video. Mặt sau: nghĩa VI.
 - Chưa có deck tech? Import file [anki-tech-english.txt](anki-tech-english.txt) theo hướng dẫn E5 bản cũ: File → Import → Tab separated.
 
-**Xong khi:** có 5 câu trong ghi chú + 1 file ghi âm + 3 thẻ Anki mới.
+**Xong khi:** có 5 câu trong ghi chú + 3 thẻ Anki mới. (Ghi âm là việc buổi tối.)
 
 ---
 
@@ -122,9 +122,9 @@ Mở E9 §2, viết 3 câu EN: Today I... / The hardest part was... / Tomorrow I
 
 ## 5. 19h40 — NÓI 20 phút (việc duy nhất buổi tối)
 
-### T3 và T4: voice với AI
-1. Mở app ChatGPT (nút tai nghe, Voice) hoặc Gemini Live hoặc app Claude (voice).
-2. Đọc to 5 câu đã nhại buổi chiều (3 phút).
+### T3 và T4: nhại + voice với AI (ở nhà)
+1. Mở ghi chú 5 câu đã chép buổi chiều. Mỗi câu: nghe đoạn video → nhại to đúng ngữ điệu → 3 lần. Bật Voice Memos thu âm 5 câu liên tiếp, nghe lại 1 lần (5 phút).
+2. Mở app ChatGPT (nút tai nghe, Voice) hoặc Gemini Live hoặc app Claude (voice).
 3. Nói prompt này bằng tiếng Anh, đơn giản: *"Let's practice. You are my teammate. Ask me about my work today. Speak slowly. Correct me gently."*
 4. Nói 10 phút. Sai cứ nói tiếp. Mục tiêu là số câu nói ra.
 5. Kết thúc: *"What were my 3 biggest mistakes?"* Ghi lại.
