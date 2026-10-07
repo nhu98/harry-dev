@@ -10,7 +10,8 @@
 
 | Giờ | Việc | Mở | Xong khi |
 |---|---|---|---|
-| 13h30 | Từ vựng 20 phút | App Mochi (khoá đang học) → xong thì mở Anki deck tech | Mochi báo hết lượt ôn hôm nay |
+| 12h45 | Duolingo 10 phút | App Duolingo trên iPhone, 2 bài | Streak còn sống |
+| 13h30 | Từ vựng 20 phút | App MochiVocab (khoá đang học) → xong thì mở Anki deck tech | Mochi báo hết lượt ôn hôm nay |
 | 14h00 | Nghe + nhại 15 phút | 1 video ở mục 2 | Thu âm được 3 câu nhại trong điện thoại |
 | 19h40 | Nói 10 phút | Mục 5, bước "voice với AI" | Nói được 1 phút không dừng quá 5 giây |
 
@@ -165,10 +166,15 @@ Mẫu đầy đủ và ví dụ ở E8 §3.1. Nếu task do PM tạo lại từ 
 
 ---
 
+## 7b. Nhắc nhở tự động
+
+Trang https://harry-dev-lemon.vercel.app/today có nút "Thêm lịch nhắc vào iPhone". Mở trên iPhone → Thêm tất cả → mỗi khối giờ có thông báo. Duolingo (12h45 mỗi ngày) và MochiVocab (13h30 ngày thường, 9h30 cuối tuần) đã nằm trong đó.
+
 ## 8. Công cụ cần cài một lần (15 phút, làm hôm nay)
 
 | Công cụ | Ở đâu | Để làm gì |
 |---|---|---|
+| Duolingo + MochiVocab (đã có trên iPhone) | App Store | 12h45 Duolingo, 13h30 Mochi. Bật thông báo trong app để nhắc thêm |
 | Anki (máy) + AnkiWeb (điện thoại) | https://apps.ankiweb.net · https://ankiweb.net | Deck từ tech, đồng bộ máy ↔ điện thoại |
 | ChatGPT app (voice) hoặc Gemini app | App Store / Play | Nói buổi tối |
 | YouGlish | https://youglish.com | Nghe người thật phát âm 1 từ |

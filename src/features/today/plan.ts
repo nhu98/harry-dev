@@ -16,6 +16,8 @@ const LINKS = {
   tv: { label: "Learn English with TV Series", href: "https://www.youtube.com/@LearnEnglishWithTVSeries" },
   youglish: { label: "YouGlish (phát âm)", href: "https://youglish.com" },
   anki: { label: "AnkiWeb", href: "https://ankiweb.net" },
+  duolingo: { label: "Duolingo", href: "https://www.duolingo.com" },
+  mochi: { label: "MochiVocab", href: "https://mochidemy.com" },
   phrases: { label: "Câu mẫu EN", href: "/phrases" },
   assistant: { label: "Trợ lý AI", href: "/assistant" },
   guideVideo: { label: "Cách xem 3 lần", href: `${E11}#22-xem-3-lần-30-phút` },
@@ -32,7 +34,9 @@ const LINKS = {
 const morning: Block = { time: "8h00", title: "Nghe thụ động khi sửa soạn", how: "Bật loa 1 tập, không cần hiểu hết.", links: [LINKS.bbc] };
 const product: Block = { time: "Sáng", title: "3 dòng Product trước task đầu tiên", how: "User goal / Simpler way / 1 câu hỏi cho PO. Comment vào task rồi mới code.", links: [LINKS.product3, LINKS.phrases] };
 const nap: Block = { time: "13h00", title: "Nap 20 phút", how: "Báo thức 25 phút. Không nhìn điện thoại.", links: [] };
-const vocab: Block = { time: "13h30", title: "Mochi 20p + Anki tech 10p", how: "Mochi hết lượt ôn thì mở Anki.", links: [LINKS.anki] };
+const duo: Block = { time: "12h45", title: "Duolingo 10 phút", how: "Sau ăn trưa, trước nap. 2 bài là đủ, giữ streak.", links: [LINKS.duolingo] };
+const vocab: Block = { time: "13h30", title: "MochiVocab 20p + Anki tech 10p", how: "Mochi hết lượt ôn thì mở Anki.", links: [LINKS.mochi, LINKS.anki] };
+const weekendVocab: Block = { time: "9h30", title: "MochiVocab 10 phút khi dậy + Duolingo", how: "Nằm trên giường làm cũng được. Giữ chuỗi là thắng.", links: [LINKS.mochi, LINKS.duolingo] };
 const video = (channel: { label: string; href: string }, hint: string): Block => ({
   time: "14h00", title: "Nghe + nhại 45 phút (tai nghe)", how: `${hint} Lần 1 sub 0.75x, lần 2 chép 5 câu, lần 3 tắt sub. Thì thầm 5 câu, thu âm.`, links: [channel, LINKS.guideVideo, LINKS.youglish],
 });
@@ -50,10 +54,10 @@ const weekdayChannel = [null, LINKS.traversy, LINKS.traversy, LINKS.wds, LINKS.w
 const chatTopics = ["", "Explain my app to a friend", "My team and my role", "What I did today at work", "A bug I fixed this week", "What I learned this week", ""];
 
 export function planFor(day: Weekday): Block[] {
-  if (day === 0 || day === 6) return [vocab];
+  if (day === 0 || day === 6) return [weekendVocab];
   const pe = day === 5 ? peReview : day === 1 || day === 3 ? peEndpoint : peBrag;
   const evening = day === 1 || day === 4 ? classPrep : day === 5 ? null : speak;
   const ch = weekdayChannel[day]!;
   const hint = ch === LINKS.tv ? "Hôm nay giải trí: 1 clip phim có sub." : "1 video 8–12 phút, chủ đề React/JS đã biết.";
-  return [morning, product, nap, vocab, video(ch, hint), pe, chat(chatTopics[day]), diary, ...(evening ? [evening] : []), lights];
+  return [morning, product, duo, nap, vocab, video(ch, hint), pe, chat(chatTopics[day]), diary, ...(evening ? [evening] : []), lights];
 }

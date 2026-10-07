@@ -3,6 +3,7 @@ import { SITE } from "@/config/site";
 import { STRINGS } from "@/config/strings";
 import { Badge, PageHeader, TextLink, styles } from "@/shared/ui";
 import { TodayPlan } from "@/features/today/components/TodayPlan";
+import { Reminders } from "@/features/today/components/Reminders";
 
 export const metadata: Metadata = { title: STRINGS.today.title };
 
@@ -19,6 +20,7 @@ export default function TodayPage() {
         </div>
       </PageHeader>
       <TodayPlan />
+      <Reminders />
     </div>
   );
 }

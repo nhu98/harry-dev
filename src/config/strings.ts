@@ -49,6 +49,10 @@ export const STRINGS = {
     schedule: "Thời gian biểu (E5) →",
     checklist: "Checklist hôm nay →",
     open: "Mở",
+    reminders: "Giờ nhắc trong ngày",
+    addToCalendar: "Thêm lịch nhắc vào iPhone (.ics) →",
+    calendarHint: "Mở link trên iPhone → Thêm tất cả. Mỗi khối giờ sẽ có thông báo. Duolingo và Mochi đã nằm trong lịch.",
+    apps: "App trên điện thoại",
     weekday: ["Chủ nhật", "Thứ hai", "Thứ ba", "Thứ tư", "Thứ năm", "Thứ sáu", "Thứ bảy"],
   },
   docs: {
@@ -66,9 +70,9 @@ export const STRINGS = {
   },
   assistant: {
     title: "Trợ lý AI (Gemini)",
-    description: "Hỏi kiến thức trong kho, luyện tiếng Anh, hoặc tạo ảnh. Chỉ người có mật khẩu mới dùng được.",
+    description: "Hỏi đáp tự tìm trong toàn bộ kho tài liệu (hoặc chọn một file), gia sư tiếng Anh A2, tạo ảnh. Cần mật khẩu.",
     modes: { ask: "Hỏi đáp", english: "Gia sư tiếng Anh", image: "Tạo ảnh" },
-    docPickerNone: "Không kèm tài liệu",
+    docPickerNone: "Tự tìm trong toàn bộ kho",
     docPickerLabel: "Hỏi về tài liệu",
     passwordLabel: "Mật khẩu trợ lý",
     passwordHint: "Nhập một lần, lưu trên máy này.",

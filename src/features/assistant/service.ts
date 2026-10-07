@@ -1,16 +1,24 @@
 /** Server-side orchestration for /api/assistant. Keeps the route handler thin. */
 import { loadAll } from "@/features/docs/lib/repository";
+import { searchSections } from "@/features/docs/lib/search";
 import { GeminiError, RETRYABLE, generateImage, generateText } from "./lib/gemini";
 import { DOC_CONTEXT_LIMIT, IMAGE_MODEL, SYSTEM, TEXT_MODELS } from "./prompts";
 import type { AssistantRequest, AssistantResponse } from "./types";
 
 const MAX_HISTORY = 20;
 
-function docContext(slug?: string): string {
-  if (!slug) return "";
-  const doc = loadAll().find((d) => d.meta.slug === slug);
-  if (!doc) return "";
-  return `\n\n[TÀI LIỆU ĐÍNH KÈM: ${doc.meta.title}]\n${doc.body.slice(0, DOC_CONTEXT_LIMIT)}`;
+const RETRIEVE_SECTIONS = 6;
+
+/** One doc when the user picked it; otherwise the best-matching sections across the whole knowledge base. */
+function docContext(question: string, slug?: string): string {
+  if (slug) {
+    const doc = loadAll().find((d) => d.meta.slug === slug);
+    return doc ? `\n\n[TÀI LIỆU ĐÍNH KÈM: ${doc.meta.title}]\n${doc.body.slice(0, DOC_CONTEXT_LIMIT)}` : "";
+  }
+  const hits = searchSections(question, { limit: RETRIEVE_SECTIONS, maxChars: DOC_CONTEXT_LIMIT });
+  if (hits.length === 0) return "";
+  return "\n\n[TRÍCH TỪ KHO TÀI LIỆU CỦA HARRY — ưu tiên dùng, nêu tên mục khi trích]\n" +
+    hits.map((h) => `--- ${h.docTitle} › ${h.heading}\n${h.text}`).join("\n\n");
 }
 
 export async function runAssistant(req: AssistantRequest, apiKey: string): Promise<AssistantResponse> {
@@ -20,7 +28,8 @@ export async function runAssistant(req: AssistantRequest, apiKey: string): Promi
     const out = await generateImage({ model: IMAGE_MODEL, prompt, apiKey });
     return { text: out.text, imageDataUrl: out.imageDataUrl };
   }
-  const system = SYSTEM[req.mode] + docContext(req.docSlug);
+  const question = messages.filter((m) => m.role === "user").map((m) => m.text).slice(-2).join(" ");
+  const system = SYSTEM[req.mode] + (req.mode === "ask" ? docContext(question, req.docSlug) : "");
   let lastError: unknown;
   for (const model of TEXT_MODELS) {
     try {
