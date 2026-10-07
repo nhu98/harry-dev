@@ -10,6 +10,7 @@ export const SITE = {
   /** Route table. Labels come from STRINGS.nav so copy stays in one place. */
   nav: [
     { href: "/", key: "home" },
+    { href: "/today", key: "today" },
     { href: "/docs", key: "docs" },
     { href: "/checklist", key: "checklist" },
     { href: "/phrases", key: "phrases" },

@@ -19,6 +19,7 @@ export const STRINGS = {
   },
   nav: {
     home: "Trang chủ",
+    today: "Hôm nay",
     docs: "Kiến thức",
     checklist: "Checklist",
     phrases: "Câu mẫu EN",
@@ -38,6 +39,17 @@ export const STRINGS = {
     knowledge: "Kho kiến thức",
     knowledgeDesc: "Markdown tự tổng hợp, song ngữ VI/EN, build tĩnh từ repo.",
     repos: "Dự án cá nhân trên GitHub",
+  },
+  today: {
+    title: "Hôm nay làm gì",
+    description: "Lịch theo thứ trong tuần, lấy từ E5 và E11. Mỗi khối có link mở ngay. Tích vào checklist khi xong.",
+    weekend: "Cuối tuần: chỉ Mochi/Anki 10 phút khi dậy. Còn lại tuỳ hứng. CN tối ngủ trước 24h.",
+    fullGuide: "Hướng dẫn đầy đủ (E11) →",
+    plan: "Kế hoạch 6 tháng (E8) →",
+    schedule: "Thời gian biểu (E5) →",
+    checklist: "Checklist hôm nay →",
+    open: "Mở",
+    weekday: ["Chủ nhật", "Thứ hai", "Thứ ba", "Thứ tư", "Thứ năm", "Thứ sáu", "Thứ bảy"],
   },
   docs: {
     title: "Kho kiến thức",

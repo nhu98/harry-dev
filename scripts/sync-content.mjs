@@ -13,7 +13,7 @@ const ALLOW = [
   "C1-mobile-react-native.md", "C2-mobile-performance-security-testing.md",
   "D1-interview-questions.md", "D3-personal-notes.md",
   "E2-career-fullstack-ai.md", "E4-english-for-devs.md", "E5-thoi-gian-bieu-tieng-anh.md",
-  "E6-hoc-lieu-tieng-anh.md", "E7-ngan-hang-du-lieu-hang-ngay.md", "E11-huong-dan-tung-ngay.md",
+  "E6-hoc-lieu-tieng-anh.md", "E7-ngan-hang-du-lieu-hang-ngay.md", "E11-huong-dan-tung-ngay.md", "E8-ke-hoach-6-thang-review-thang-4.md",
 ];
 
 // Names of real people / employers must not reach the public site.

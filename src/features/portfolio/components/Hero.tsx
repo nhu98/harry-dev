@@ -14,7 +14,8 @@ export function Hero() {
       <p className={`mt-4 max-w-2xl ${styles.text.muted}`}>{t.intro}</p>
       <div className="mt-6 flex flex-wrap gap-2">{STACK.map((s) => <Badge key={s}>{s}</Badge>)}</div>
       <div className={`mt-6 ${styles.control.buttonRow} gap-3`}>
-        <ButtonLink href="/docs">{t.ctaDocs}</ButtonLink>
+        <ButtonLink href="/today">{STRINGS.nav.today}</ButtonLink>
+        <ButtonLink href="/docs" variant="outline">{t.ctaDocs}</ButtonLink>
         <ButtonLink href={SITE.github} variant="outline">{t.ctaGithub}</ButtonLink>
       </div>
     </section>
