@@ -13,6 +13,7 @@ export const SITE = {
     { href: "/docs", key: "docs" },
     { href: "/checklist", key: "checklist" },
     { href: "/phrases", key: "phrases" },
+    { href: "/assistant", key: "assistant" },
   ],
-  routes: { docs: (slug: string) => `/docs/${slug}`, docsGroup: (g: string) => `/docs#group-${g}` },
+  routes: { assistantApi: "/api/assistant", docs: (slug: string) => `/docs/${slug}`, docsGroup: (g: string) => `/docs#group-${g}` },
 } as const;

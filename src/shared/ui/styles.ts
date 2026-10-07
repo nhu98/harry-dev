@@ -45,6 +45,13 @@ export const styles = {
     responsive3: "grid gap-4 sm:grid-cols-2 lg:grid-cols-3",
     docLayout: "lg:grid lg:grid-cols-[1fr_240px] lg:gap-10",
   },
+  chat: {
+    log: "space-y-3 max-h-[60vh] overflow-y-auto pr-1",
+    user: "ml-auto max-w-[85%] rounded-xl bg-accent text-white px-3 py-2 text-sm whitespace-pre-wrap",
+    bot: "mr-auto max-w-[85%] rounded-xl border border-border bg-card px-3 py-2 text-sm whitespace-pre-wrap",
+    textarea: "w-full rounded-md border border-border bg-card px-3 py-2 text-sm outline-none focus:border-accent min-h-20 resize-y",
+    select: "rounded-md border border-border bg-card px-2 py-1.5 text-sm",
+  },
   pager: "mt-10 flex justify-between gap-4 text-sm border-t border-border pt-4",
   flashcard: "min-h-44 p-6 flex flex-col justify-center shadow-sm active:scale-[0.99] transition",
   prose: "doc prose prose-neutral dark:prose-invert mt-4 prose-headings:tracking-tight prose-a:text-accent prose-code:before:content-none prose-code:after:content-none",

@@ -1,6 +1,6 @@
 "use client";
 import { STRINGS } from "@/config/strings";
-import { List, ListRow, Muted, Stat, styles } from "@/shared/ui";
+import { List, ListRow, Muted, Stat, TextLink, styles } from "@/shared/ui";
 import { cn } from "@/shared/lib/cn";
 import { TASKS } from "../tasks";
 import { useChecklist } from "../useChecklist";
@@ -18,14 +18,15 @@ export function DailyChecklist() {
         {TASKS.map((t) => {
           const checked = c.done.includes(t.id);
           return (
-            <ListRow key={t.id} className="items-start cursor-pointer hover:bg-transparent">
-              <label className="contents">
-                <input type="checkbox" checked={checked} disabled={!c.ready} onChange={() => c.toggle(t.id)} className={styles.control.checkbox} />
-                <span className={cn("flex-1 text-sm", checked && styles.state.done)}>
+            <ListRow key={t.id} className="items-start hover:bg-transparent">
+              <input type="checkbox" checked={checked} disabled={!c.ready} onChange={() => c.toggle(t.id)} className={styles.control.checkbox} />
+              <span className="flex-1 min-w-0">
+                <label className={cn("block text-sm cursor-pointer", checked && styles.state.done)} onClick={() => c.ready && c.toggle(t.id)}>
                   {t.min && <span className="mr-1">🔴</span>}{t.label}
-                </span>
-                <span className={`${styles.text.tiny} whitespace-nowrap pt-0.5`}>{t.time}</span>
-              </label>
+                </label>
+                <Muted size="xs" className="mt-1">{t.how} <TextLink href={t.guide} className="text-accent">{STRINGS.common.howTo}</TextLink></Muted>
+              </span>
+              <span className={`${styles.text.tiny} whitespace-nowrap pt-0.5`}>{t.time}</span>
             </ListRow>
           );
         })}

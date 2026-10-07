@@ -2,6 +2,7 @@
 
 > Bản cũ (08/2026) dồn tiếng Anh vào buổi tối. Bản này **dời gần hết việc học vào buổi chiều ở công ty**, vì thực tế: sáng bận xử lý việc, **trưa và chiều hầu như rảnh** (AI phụ làm task), ngồi máy tính + đeo tai nghe được.
 > Buổi tối chỉ còn đúng **20 phút nói**. Sau 21h là giờ của bạn.
+> **Cách làm cụ thể từng khối (mở gì, link nào, bước nào): [E11](E11-huong-dan-tung-ngay.md).**
 > Kế hoạch tổng 6 tháng ở [E8-ke-hoach-6-thang-review-thang-4.md](E8-ke-hoach-6-thang-review-thang-4.md). Học liệu ở [E6](E6-hoc-lieu-tieng-anh.md), ngân hàng đề ở [E7](E7-ngan-hang-du-lieu-hang-ngay.md).
 > Lịch thật: dậy 8h → 9h tới cty → sáng bận → 12h–13h ăn trưa → 13h30–17h45 rảnh nhiều → 17h45 ăn tối → 19h về nhà → lớp giao tiếp tối T2 & T5 20h–21h → tối T6 về ba mẹ.
 
