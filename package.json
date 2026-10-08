@@ -11,7 +11,8 @@
     "prebuild": "node scripts/sync-content.mjs && node scripts/build-ics.mjs",
     "check:inline": "node scripts/check-inline.mjs",
     "check": "pnpm lint && pnpm exec tsc --noEmit && pnpm check:inline",
-    "ics": "node scripts/build-ics.mjs"
+    "ics": "node scripts/build-ics.mjs",
+    "shot:mobile": "node scripts/shot-mobile.mjs"
   },
   "dependencies": {
     "github-slugger": "^2.0.0",
@@ -38,6 +39,7 @@
     "@types/three": "^0.186.0",
     "eslint": "^9",
     "eslint-config-next": "16.4.0",
+    "playwright": "^1.64.0",
     "tailwindcss": "^4",
     "typescript": "^5"
   },

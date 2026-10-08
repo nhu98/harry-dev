@@ -15,4 +15,6 @@ grep -rlE "Allan|Oleg|Tôn Nguyễn|IMT Solutions" content/ src/ || echo "privac
 
 Rồi smoke test: `pnpm start -p 3999 &`, chờ 4 giây, curl `/`, `/docs`, `/checklist`, `/phrases`, một trang `/docs/<slug>`, và `/docs/khong-ton-tai` phải 404. Sau đó `pkill -f "next start"`.
 
+Responsive mobile (bắt buộc khi sửa UI): `pnpm shot:mobile https://harry-dev-lemon.vercel.app` (hoặc localhost sau `pnpm start`). Lần đầu cần `pnpm exec playwright install webkit`. Phải in "shot-mobile: ok"; nếu BAD, mở ảnh trong `shots/` bằng Read để nhìn rồi sửa.
+
 Báo kết quả dạng bảng: bước / trạng thái. Không nói "ổn" nếu có bước chưa chạy.
