@@ -20,7 +20,7 @@
 | Giờ | Việc | 🔴 = tối thiểu ngày lười |
 |---|---|---|
 | 8h00–8h30 | Dậy, sửa soạn, **bật loa 1 tập BBC 6 Minute English / ESLPod** | nghe thụ động, 0 phút tốn thêm |
-| 8h30–9h00 | Chạy xe, **không tai nghe** | — |
+| 8h30–9h00 | Chạy xe, **không tai nghe**. **Nói thầm lại 5 câu đã chép hôm qua** (không cần nhìn gì, nói từ trí nhớ) | 5 phút nói thêm mỗi sáng, miễn phí |
 | 9h00–12h00 | **LÀM VIỆC.** Trước mỗi task mới: viết **3 dòng Product** (E8 §3.1) rồi mới code | 🔴 3 dòng, mất 5 phút |
 | 12h00–12h45 | Ăn trưa | — |
 | 12h45–12h55 | 🔴 **Duolingo 10 phút** (2 bài, giữ streak) | app trên iPhone |
@@ -28,24 +28,26 @@
 | 13h30–14h00 | 🔴 **MochiVocab 20p + deck Anki tech 10p** (dời từ sáng xuống đây vì sáng bận) | nếu sáng đã làm thì bỏ qua |
 | 14h00–14h45 | **Tiếng Anh khối 1 — NGHE + CHÉP (tai nghe, im lặng):** 1 video tech 8–12p (E6 §9) xem 3 lần: lần 1 sub EN, lần 2 chép 5 câu hay, lần 3 tắt sub. Nạp 3 từ vào Anki. **Không nhại, không thu âm ở công ty**, phần đó để tối ở nhà | 🔴 chỉ cần lần 1 + 3 câu |
 | 14h45–15h30 | **Product Engineer khối (E8 §4):** T2/T4 = đọc 1 endpoint Rails với AI làm gia sư · T3/T5 = viết/ghi brag doc + soạn 1 câu hỏi/đề xuất cho PO bằng EN · T6 = tổng kết tuần | 🔴 10 phút brag doc |
-| 15h30–16h15 | **Tiếng Anh khối 2 — VIẾT + CHAT (im lặng được):** chat **gõ chữ** với AI bằng EN theo đề E7 Kho 2 (prompt E6 §8, bỏ voice), AI sửa lỗi · hoặc đọc 1 hội thoại E7 Kho 6 · hoặc viết PR description / tin nhắn cho PO bằng EN | — |
+| 15h30–15h45 | 🔴 **Ngữ pháp 15 phút**: 1 unit *English Grammar in Use* (Murphy), đọc trang trái, làm bài trang phải vào vở/ghi chú. 1 unit/ngày, T2–T6 | sách hoặc app, xem E11 §4.0 |
+| 15h45–16h30 | **Tiếng Anh khối 2 — VIẾT + CHAT (im lặng được):** chat **gõ chữ** với AI bằng EN theo đề E7 Kho 2 (prompt E6 §8, bỏ voice), AI sửa lỗi · hoặc đọc 1 hội thoại E7 Kho 6 · hoặc viết PR description / tin nhắn cho PO bằng EN | — |
 | 16h15–17h30 | Đệm cho công việc. Rảnh thì đọc docs EN, nạp 5 từ vào Anki | — |
 | 17h35–17h45 | 🔴 **Standup diary 3 câu EN** (E7 Kho 3) vào [E9-brag-doc.md](E9-brag-doc.md) phần nhật ký | 5 phút |
 | 17h45–19h00 | Ăn tối, về nhà | — |
 | 19h00–19h40 | Nghỉ thật | — |
-| 19h40–20h00 | **20 phút NÓI** (mục 2) | 🔴 ngày lười: 5 phút đọc to 3 câu |
+| 19h40–20h10 | **NÓI 30 phút** (T3/T4), 20 phút T6 lúc 19h00 trước khi về ba mẹ (mục 2) | 🔴 ngày lười: 5 phút đọc to 3 câu |
 | 20h00–21h00 | T2/T5: **LỚP GIAO TIẾP** · ngày khác: tự do | — |
 | 21h00–23h30 | Tự do, chơi không áy náy | — |
 | 23h30–24h00 | Wind-down, tắt đèn | 🔴 |
 
-**Tổng mỗi ngày:** ~2 tiếng tiếng Anh (gần hết ở công ty) + ~45 phút Product Engineer + 20 phút nói buổi tối.
+**Tổng mỗi ngày:** ~2 tiếng 15 phút tiếng Anh (gần hết ở công ty, gồm 15 phút ngữ pháp) + ~45 phút Product Engineer + 30 phút nói buổi tối. **Giờ nói mỗi tuần ≈ 5,5 tiếng** (tối T3/T4/T6 + 2 lớp + 5 phút mỗi sáng).
 **Ngày lười chỉ làm dòng 🔴:** cộng lại dưới 1 tiếng, vẫn tính đạt. **Không bỏ 2 ngày liên tiếp.**
 
 ---
 
 ## 2. Buổi tối 19h40–20h00: chỉ NÓI
 
-- **T3 & T4:** nhại to 5 câu đã chép buổi chiều, thu âm, nghe lại (5p) + nói với AI bằng **voice** 1 đề E7 Kho 2 (15p). Chiều đã chọn câu, tối chỉ việc phát ra tiếng.
+- **T3 & T4 (30 phút):** nhại to 5 câu đã chép buổi chiều, thu âm, nghe lại (5p) + nói với AI bằng **voice** 1 đề E7 Kho 2 (15p) + **kể lại nội dung video chiều nay trong 1 phút không nhìn giấy, thu âm** (10p). Chiều đã chọn câu, tối chỉ việc phát ra tiếng.
+- **T6 (20 phút, 19h00 trước khi về ba mẹ):** voice với AI, đề "my week". Xong thì nghỉ hẳn.
 - **T2 & T5:** 15p điền template chuẩn bị lớp (E6 §7). Sau lớp: ghi 3 lỗi bị sửa + 3 từ mới vào Anki.
 - **T6:** không gì hết.
 

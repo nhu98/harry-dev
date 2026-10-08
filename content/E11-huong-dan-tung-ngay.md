@@ -14,6 +14,7 @@
 | 13h30 | Từ vựng 20 phút | App MochiVocab (khoá đang học) → xong thì mở Anki deck tech | Mochi báo hết lượt ôn hôm nay |
 | 14h00 | Nghe + chép 15 phút | 1 video ở mục 2 | Chép được 3 câu vào ghi chú |
 | 19h40 | Nói 10 phút | Mục 5, bước "voice với AI" | Nói được 1 phút không dừng quá 5 giây |
+| 15h30 | Ngữ pháp 1 unit | Mục 4.0 | 1 unit đánh dấu trong vở |
 
 ---
 
@@ -94,9 +95,19 @@ Trong Claude Code tại thư mục kho, gõ `/weekly-review`. Trả lời câu n
 
 ---
 
-## 4. 15h30 — Tiếng Anh khối 2: VIẾT + CHAT gõ chữ (45 phút, im lặng được)
+## 4. 15h30 — Tiếng Anh khối 2: NGỮ PHÁP + VIẾT + CHAT (60 phút, im lặng được)
 
-### 4.1. Chat với AI bằng tiếng Anh (25 phút)
+### 4.0. Ngữ pháp 15 phút, 1 unit/ngày (15h30–15h45)
+- **Sách:** *English Grammar in Use* (Raymond Murphy, Cambridge), bản 5th edition, trình độ B1 (bìa xanh). Mua sách giấy ở Fahasa/Tiki (~250k) hoặc app **"English Grammar in Use"** trên App Store (mua từng phần). Trang chính thức: https://www.cambridge.org/elt/grammar-in-use
+- **Cách làm:** mỗi unit là 2 trang. Trang trái: đọc giải thích 5 phút, chép 2 ví dụ vào vở. Trang phải: làm bài tập 8 phút, viết tay. Đối chiếu đáp án cuối sách 2 phút, đánh dấu câu sai.
+- **Thứ tự:** đi theo số unit từ 1. Mỗi tháng 20 unit (T2–T6). Lộ trình: 10/2026 unit 1–20 · 11 unit 21–40 · 12 unit 41–60 · 1/2027 unit 61–80 · 2 unit 81–100 · 3 unit 101–120. Unit nào dễ, biết rồi thì làm bài tập thôi, bỏ qua phần đọc.
+- **Dùng ngay:** chọn 1 cấu trúc vừa học, ép mình dùng trong buổi chat 15h45 và trong tin nhắn Slack hôm đó.
+- **Xong khi:** có 1 unit đánh dấu trong vở + ít nhất 1 câu Slack/chat dùng cấu trúc đó.
+
+### 4.0b. Đo trình độ khách quan
+- **EF SET** miễn phí, 50 phút, ra điểm CEFR: https://www.efset.org. Làm lần 0 trong tuần này (ghi điểm vào E9). Làm lại tháng 1/2027 và tháng 4/2027. Mục tiêu tháng 4: **≥ 41 điểm (B1)**.
+
+### 4.1. Chat với AI bằng tiếng Anh (25 phút, từ 15h45)
 - Mở ChatGPT / Claude / Gemini bản web. Dán prompt:
 ```
 You are my English tutor. I am a frontend developer, English level A2.
@@ -122,12 +133,19 @@ Mở E9 §2, viết 3 câu EN: Today I... / The hardest part was... / Tomorrow I
 
 ## 5. 19h40 — NÓI 20 phút (việc duy nhất buổi tối)
 
-### T3 và T4: nhại + voice với AI (ở nhà)
+### T3 và T4: nhại + voice với AI (ở nhà, 30 phút)
 1. Mở ghi chú 5 câu đã chép buổi chiều. Mỗi câu: nghe đoạn video → nhại to đúng ngữ điệu → 3 lần. Bật Voice Memos thu âm 5 câu liên tiếp, nghe lại 1 lần (5 phút).
 2. Mở app ChatGPT (nút tai nghe, Voice) hoặc Gemini Live hoặc app Claude (voice).
 3. Nói prompt này bằng tiếng Anh, đơn giản: *"Let's practice. You are my teammate. Ask me about my work today. Speak slowly. Correct me gently."*
 4. Nói 10 phút. Sai cứ nói tiếp. Mục tiêu là số câu nói ra.
 5. Kết thúc: *"What were my 3 biggest mistakes?"* Ghi lại.
+6. **10 phút cuối:** kể lại video chiều nay trong 1 phút, không nhìn giấy, thu âm. Nghe lại 1 lần. Đây là bài "retell", kỹ năng nói lên nhanh nhất nhờ nó.
+
+### T6 (19h00–19h20, trước khi về ba mẹ)
+Voice với AI 20 phút, đề: *"Tell me about your week"*. Xong là nghỉ hẳn tới T2.
+
+### Mỗi sáng chạy xe (5 phút, không tai nghe)
+Nói thầm lại 5 câu đã chép hôm qua, từ trí nhớ. Quên thì bỏ qua, không dừng xe mở điện thoại.
 - Tuần có khách nước ngoài sang: thay bằng prompt đóng vai ở [E10](E10-script-gap-PM.md) mục 9.
 
 ### T2 và T5: lớp giao tiếp 20h–21h
@@ -175,6 +193,8 @@ Trang https://harry-dev-lemon.vercel.app/today có nút "Thêm lịch nhắc và
 | Công cụ | Ở đâu | Để làm gì |
 |---|---|---|
 | Duolingo + MochiVocab (đã có trên iPhone) | App Store | 12h45 Duolingo, 13h30 Mochi. Bật thông báo trong app để nhắc thêm |
+| English Grammar in Use (sách hoặc app) | Fahasa / App Store | 15 phút ngữ pháp mỗi chiều ở cty |
+| EF SET | https://www.efset.org | Đo trình độ tuần này, tháng 1, tháng 4 |
 | Anki (máy) + AnkiWeb (điện thoại) | https://apps.ankiweb.net · https://ankiweb.net | Deck từ tech, đồng bộ máy ↔ điện thoại |
 | ChatGPT app (voice) hoặc Gemini app | App Store / Play | Nói buổi tối |
 | YouGlish | https://youglish.com | Nghe người thật phát âm 1 từ |

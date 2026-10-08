@@ -25,7 +25,7 @@ Hai ưu tiên trên **giao nhau ở một điểm**: nói chuyện với PO bằ
 | 1 | Hỏi / đề xuất với PO bằng EN | Đếm số lần trong E9 | 0/tuần → **2/tuần** |
 | 2 | Hiểu backend Rails của Waxstat | Số endpoint đã vẽ luồng trong E9 §3 | 0 → **≥ 20** |
 | 3 | Brag doc | Số dòng thành tựu có bằng chứng | 0 → **≥ 24** (1/tuần) |
-| 4 | Nói tiếng Anh | Thu âm self-intro 2 phút cuối mỗi tháng | A2 → nói 2 phút không nhìn giấy, không dừng quá 3 giây |
+| 4 | Tiếng Anh lên B1 (đo khách quan) | Bài **EF SET** miễn phí 50 phút tại https://www.efset.org (điểm 41–50 = B1) + thu âm self-intro cuối tháng | A2 (≈31–40) → **≥ 41 (B1) vào 4/2027**, mốc giữa: ≥ 36 vào 1/2027 |
 | 5 | Một đề xuất sản phẩm được chấp nhận | PO/sếp đồng ý làm theo cách bạn đề xuất | 0 → **≥ 1** (ghi rõ trong E9) |
 
 Đạt 4/5 là buổi review tháng 4 bạn có chuyện để nói, dù kết quả lương thế nào.
@@ -36,13 +36,13 @@ Hai ưu tiên trên **giao nhau ở một điểm**: nói chuyện với PO bằ
 
 | Tháng | Tiếng Anh (E6/E7 chạy tuần tự) | Product Engineer | Mốc kiểm tra cuối tháng |
 |---|---|---|---|
-| **10/2026** | Frames nhóm 1–2 (E6 §2), batch từ W1–W4. Chat gõ chữ với AI mỗi chiều. | Bắt đầu 3 dòng Product mỗi task. Đọc 4 endpoint Rails đầu tiên (các API app Waxstat gọi nhiều nhất). | Thu âm self-intro #1. E9 có ≥ 4 dòng. |
-| **11/2026** | Frames nhóm 3–4, W5–W8. Bắt đầu gửi tin nhắn cho PO bằng EN tự viết (AI chỉ sửa). | 4 endpoint tiếp. Gửi câu hỏi "why" đầu tiên cho PO trong meeting. | 1 câu hỏi đã hỏi PO trực tiếp. |
-| **12/2026** | Frames nhóm 5–6. Thêm E7 Kho 6 hội thoại. | Vẽ sơ đồ database Waxstat (bảng chính + quan hệ). Đề xuất đầu tiên cho PO (cách làm đơn giản hơn / tính năng user cần). | Self-intro #3. Sơ đồ DB 1 trang. |
-| **1/2027** | Frames nhóm 7–8. Nói với AI voice tăng lên 20p. | 4 endpoint. Xin leader 1 task backend nhỏ (sửa 1 API) — làm với AI giải thích, không AI viết hộ. | 1 PR backend đã merge. |
-| **2/2027** | Ôn lại 50 frames. Tập trình bày 1 tính năng bằng EN 3 phút. | 4 endpoint. Viết 1 trang "hệ thống Waxstat nhìn từ trên xuống" bằng EN (E9 §4). | Trình bày 1 trang đó cho AI nghe, AI hỏi lại. |
-| **3/2027** | Luyện script review tháng 4 (§7). Mock buổi review với AI voice 3 lần. | Chốt brag doc, chọn 5 dòng mạnh nhất. Hỏi sếp/leader feedback trước 1 tháng. | Script review thuộc. |
-| **4/2027** | Review. | Review. | Quyết định: ở lại với mức mới, hay mở lại E1/E3 + CV để tìm việc HCM với 6 tháng bằng chứng trong tay. |
+| **10/2026** | Frames nhóm 1–2 (E6 §2), batch từ W1–W4. Chat gõ chữ với AI mỗi chiều. **Bắt đầu Grammar in Use unit 1–20 (1 unit/ngày, 15 phút ở cty).** Làm EF SET lần 0 để biết điểm xuất phát. | Bắt đầu 3 dòng Product mỗi task. Đọc 4 endpoint Rails đầu tiên (các API app Waxstat gọi nhiều nhất). | Thu âm self-intro #1. E9 có ≥ 4 dòng. |
+| **11/2026** | Frames nhóm 3–4, W5–W8. Grammar unit 21–40. Bắt đầu gửi tin nhắn cho PO bằng EN tự viết (AI chỉ sửa). | 4 endpoint tiếp. Gửi câu hỏi "why" đầu tiên cho PO trong meeting. | 1 câu hỏi đã hỏi PO trực tiếp. |
+| **12/2026** | Frames nhóm 5–6. Grammar unit 41–60. Thêm E7 Kho 6 hội thoại. | Vẽ sơ đồ database Waxstat (bảng chính + quan hệ). Đề xuất đầu tiên cho PO (cách làm đơn giản hơn / tính năng user cần). | Self-intro #3. Sơ đồ DB 1 trang. |
+| **1/2027** | Frames nhóm 7–8. **Làm EF SET lần 1** (ghi điểm vào E9). Grammar in Use unit 61–80. | 4 endpoint. Xin leader 1 task backend nhỏ (sửa 1 API) — làm với AI giải thích, không AI viết hộ. | 1 PR backend đã merge. |
+| **2/2027** | Ôn lại 50 frames. Grammar unit 81–100. Tập trình bày 1 tính năng bằng EN 3 phút. | 4 endpoint. Viết 1 trang "hệ thống Waxstat nhìn từ trên xuống" bằng EN (E9 §4). | Trình bày 1 trang đó cho AI nghe, AI hỏi lại. |
+| **3/2027** | Luyện script review tháng 4 (§7). Grammar unit 101–120 + ôn lỗi hay sai. Mock buổi review với AI voice 3 lần. | Chốt brag doc, chọn 5 dòng mạnh nhất. Hỏi sếp/leader feedback trước 1 tháng. | Script review thuộc. |
+| **4/2027** | **EF SET lần 2** (mục tiêu ≥ 41). Review. | Review. | Quyết định: ở lại với mức mới, hay mở lại E1/E3 + CV để tìm việc HCM với 6 tháng bằng chứng trong tay. |
 
 ---
 
@@ -193,6 +193,10 @@ Mang theo: **5 dòng mạnh nhất trong E9** + sơ đồ hệ thống 1 trang +
 Nếu kết quả không như mong muốn: bạn vẫn có 6 tháng bằng chứng. Mở lại E1/E3 + CV, bật chế độ tìm việc. Cả hai nhánh đều có đường đi.
 
 ---
+
+## 7b. Nói thật với người thật (tuỳ chọn nhưng là đòn bẩy lớn nhất)
+
+Lịch hiện tại cho khoảng 5,5 giờ nói mỗi tuần, phần lớn với AI và lớp. Muốn chắc B1 vào tháng 4 thay vì "chớm B1": thêm **1 buổi italki 30 phút/tuần** với giáo viên cộng đồng (khoảng 100–150k/buổi), https://www.italki.com. Chọn giáo viên Philippines hoặc Việt Nam nói chậm, yêu cầu chủ đề "daily standup, explain a feature, ask why". Đây là khoản đầu tư rẻ nhất cho kỳ review.
 
 ## 8. Luật chống trì hoãn (đọc khi thấy "nản nản lười lười")
 

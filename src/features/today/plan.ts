@@ -23,6 +23,9 @@ const LINKS = {
   guideVideo: { label: "Cách xem 3 lần", href: `${E11}#22-xem-3-lần-30-phút` },
   guidePE: { label: "Prompt gia sư Rails", href: `${E11}#t2-và-t4-đọc-1-endpoint-backend-với-ai-làm-gia-sư` },
   guideBrag: { label: "Brag doc + câu hỏi PO", href: `${E11}#t3-và-t5-brag-doc--1-câu-hỏi-cho-po` },
+  grammar: { label: "Grammar in Use", href: "https://www.cambridge.org/elt/grammar-in-use" },
+  guideGrammar: { label: "Cách học 1 unit", href: `${E11}#40-ngữ-pháp-15-phút-1-unitngày-15h3015h45` },
+  efset: { label: "EF SET (đo trình độ)", href: "https://www.efset.org" },
   guideChat: { label: "Prompt chat EN", href: `${E11}#41-chat-với-ai-bằng-tiếng-anh-25-phút` },
   guideSpeak: { label: "Cách nói với AI", href: `${E11}#t3-và-t4-voice-với-ai` },
   guideClass: { label: "Template lớp", href: `${E6}#7-template-chuẩn-bị-lớp-t2--t5-điền-trong-1520-phút-trước-lớp` },
@@ -32,6 +35,8 @@ const LINKS = {
 };
 
 const morning: Block = { time: "8h00", title: "Nghe thụ động khi sửa soạn", how: "Bật loa 1 tập, không cần hiểu hết.", links: [LINKS.bbc] };
+const commute: Block = { time: "8h30", title: "Chạy xe: nói thầm 5 câu hôm qua", how: "Không tai nghe. Nói từ trí nhớ, quên thì bỏ qua.", links: [] };
+const grammar: Block = { time: "15h30", title: "Ngữ pháp 15 phút: 1 unit Grammar in Use", how: "Đọc trang trái 5 phút, làm bài trang phải 8 phút vào vở, dò đáp án. Dùng cấu trúc đó trong chat ngay sau.", links: [LINKS.grammar, LINKS.guideGrammar] };
 const product: Block = { time: "Sáng", title: "3 dòng Product trước task đầu tiên", how: "User goal / Simpler way / 1 câu hỏi cho PO. Comment vào task rồi mới code.", links: [LINKS.product3, LINKS.phrases] };
 const nap: Block = { time: "13h00", title: "Nap 20 phút", how: "Báo thức 25 phút. Không nhìn điện thoại.", links: [] };
 const duo: Block = { time: "12h45", title: "Duolingo 10 phút", how: "Sau ăn trưa, trước nap. 2 bài là đủ, giữ streak.", links: [LINKS.duolingo] };
@@ -40,9 +45,10 @@ const weekendVocab: Block = { time: "9h30", title: "MochiVocab 10 phút khi dậ
 const video = (channel: { label: string; href: string }, hint: string): Block => ({
   time: "14h00", title: "Nghe + chép 45 phút (tai nghe, im lặng)", how: `${hint} Lần 1 sub 0.75x, lần 2 chép 5 câu hay vào ghi chú, lần 3 tắt sub. Nạp 3 từ vào Anki. Phần nhại để tối ở nhà.`, links: [channel, LINKS.guideVideo],
 });
-const chat = (topic: string): Block => ({ time: "15h30", title: "Chat gõ chữ với AI bằng EN", how: `Đề hôm nay: "${topic}". Gõ tay 10 lượt, cuối buổi xin bảng 3 lỗi.`, links: [LINKS.assistant, LINKS.guideChat, LINKS.e7k2] });
+const chat = (topic: string): Block => ({ time: "15h45", title: "Chat gõ chữ với AI bằng EN", how: `Đề hôm nay: "${topic}". Gõ tay 10 lượt, cuối buổi xin bảng 3 lỗi.`, links: [LINKS.assistant, LINKS.guideChat, LINKS.e7k2] });
 const diary: Block = { time: "17h35", title: "Nhật ký 3 câu EN", how: "Today I… / The hardest part was… / Tomorrow I will…", links: [LINKS.e7k3] };
-const speak: Block = { time: "19h40", title: "Ở nhà: nhại + nói 20 phút", how: "5 phút nhại to 5 câu đã chép chiều nay (thu âm, nghe lại). 15 phút voice với AI. Cuối hỏi 3 lỗi lớn nhất.", links: [LINKS.guideSpeak, LINKS.youglish] };
+const speak: Block = { time: "19h40", title: "Ở nhà: nhại + nói 30 phút", how: "5 phút nhại to 5 câu đã chép (thu âm). 15 phút voice với AI. 10 phút kể lại video chiều nay trong 1 phút, thu âm, nghe lại.", links: [LINKS.guideSpeak, LINKS.youglish] };
+const speakFri: Block = { time: "19h00", title: "Nói 20 phút với AI trước khi về ba mẹ", how: "Đề: Tell me about your week. Xong là nghỉ hẳn tới T2.", links: [LINKS.guideSpeak] };
 const classPrep: Block = { time: "19h40", title: "Chuẩn bị lớp 15 phút", how: "Điền template: chủ đề + 5 câu định nói + 3 câu small talk. Lớp 20h–21h.", links: [LINKS.guideClass] };
 const lights: Block = { time: "23h30", title: "Tắt đèn trước 24h", how: "Rời màn hình 23h30. Nghe podcast dễ cho buồn ngủ.", links: [] };
 
@@ -56,8 +62,8 @@ const chatTopics = ["", "Explain my app to a friend", "My team and my role", "Wh
 export function planFor(day: Weekday): Block[] {
   if (day === 0 || day === 6) return [weekendVocab];
   const pe = day === 5 ? peReview : day === 1 || day === 3 ? peEndpoint : peBrag;
-  const evening = day === 1 || day === 4 ? classPrep : day === 5 ? null : speak;
+  const evening = day === 1 || day === 4 ? classPrep : day === 5 ? speakFri : speak;
   const ch = weekdayChannel[day]!;
   const hint = ch === LINKS.tv ? "Hôm nay giải trí: 1 clip phim có sub." : "1 video 8–12 phút, chủ đề React/JS đã biết.";
-  return [morning, product, duo, nap, vocab, video(ch, hint), pe, chat(chatTopics[day]), diary, ...(evening ? [evening] : []), lights];
+  return [morning, commute, product, duo, nap, vocab, video(ch, hint), pe, grammar, chat(chatTopics[day]), diary, ...(evening ? [evening] : []), lights];
 }

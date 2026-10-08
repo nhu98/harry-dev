@@ -14,6 +14,20 @@
     "note": "Loa ngoài, không cần hiểu hết."
   },
   {
+    "id": "commute",
+    "time": "08:30",
+    "minutes": 5,
+    "days": [
+      "MO",
+      "TU",
+      "WE",
+      "TH",
+      "FR"
+    ],
+    "title": "Chạy xe: nói thầm 5 câu hôm qua",
+    "note": "Không tai nghe. Nói từ trí nhớ."
+  },
+  {
     "id": "product",
     "time": "09:20",
     "minutes": 5,
@@ -100,8 +114,22 @@
     "note": "T2/T4 endpoint · T3/T5 brag doc + câu hỏi PO · T6 /weekly-review."
   },
   {
-    "id": "chat",
+    "id": "grammar",
     "time": "15:30",
+    "minutes": 15,
+    "days": [
+      "MO",
+      "TU",
+      "WE",
+      "TH",
+      "FR"
+    ],
+    "title": "Ngữ pháp 15 phút: 1 unit Grammar in Use",
+    "note": "Đọc trang trái, làm bài trang phải vào vở."
+  },
+  {
+    "id": "chat",
+    "time": "15:45",
     "minutes": 45,
     "days": [
       "MO",
@@ -130,13 +158,13 @@
   {
     "id": "speak",
     "time": "19:40",
-    "minutes": 20,
+    "minutes": 30,
     "days": [
       "TU",
       "WE"
     ],
-    "title": "Ở nhà: nhại 5 câu + nói với AI",
-    "note": "Nhại to, thu âm, nghe lại. Rồi voice với AI 15 phút."
+    "title": "Ở nhà: nhại + nói với AI 30 phút",
+    "note": "Nhại 5 câu, voice 15 phút, kể lại video 1 phút (thu âm)."
   },
   {
     "id": "class-prep",
@@ -184,5 +212,15 @@
     ],
     "title": "Rời màn hình, tắt đèn trước 24h",
     "note": "Nghe podcast dễ cho buồn ngủ."
+  },
+  {
+    "id": "speak-fri",
+    "time": "19:00",
+    "minutes": 20,
+    "days": [
+      "FR"
+    ],
+    "title": "Nói 20 phút với AI trước khi về ba mẹ",
+    "note": "Đề: Tell me about your week."
   }
 ]
