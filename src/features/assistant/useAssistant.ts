@@ -1,68 +1,75 @@
 "use client";
-import { useState, useSyncExternalStore } from "react";
+import { useMemo, useState, useSyncExternalStore } from "react";
 import { SITE } from "@/config/site";
 import { createLocalStore } from "@/shared/lib/storage";
-import type { AssistantResponse, Message, Mode } from "./types";
+import { makeId, parseState, pruneState, titleFrom, upsertThread, type State } from "./lib/threads";
+import type { AssistantResponse, Mode, Thread } from "./types";
 
-/** Conversation state persisted in localStorage; shared by the bubble and the full page. */
-type State = { mode: Mode; docSlug: string; threads: Record<Mode, Message[]> };
-const EMPTY: State = { mode: "ask", docSlug: "", threads: { ask: [], english: [], image: [] } };
-const MAX_MESSAGES = 60;   // per mode
-const KEEP_IMAGES = 3;     // base64 images are large; keep only the latest few
+type ErrorCode = "no_key" | "auth" | "quota" | "busy" | "generic";
+const KNOWN_ERRORS: readonly string[] = ["no_key", "auth", "quota", "busy"];
 
-const store = createLocalStore("harry-assistant-v1");
+const store = createLocalStore("harry-assistant-v2");
 
-function parse(raw: string): State {
-  try {
-    const s = raw ? (JSON.parse(raw) as Partial<State>) : {};
-    return { ...EMPTY, ...s, threads: { ...EMPTY.threads, ...(s.threads ?? {}) } };
-  } catch { return EMPTY; }
-}
-
-function trim(msgs: Message[]): Message[] {
-  const kept = msgs.slice(-MAX_MESSAGES);
-  let images = 0;
-  for (let i = kept.length - 1; i >= 0; i--) {
-    if (kept[i].imageDataUrl && ++images > KEEP_IMAGES) kept[i] = { ...kept[i], imageDataUrl: undefined };
-  }
-  return kept;
-}
-
+/** Threads persisted in localStorage; one hook shared by the floating bubble and the full page. */
 export function useAssistant() {
   const raw = useSyncExternalStore(store.subscribe, store.getSnapshot, store.getServerSnapshot);
-  const state = parse(raw);
+  const state = useMemo(() => parseState(raw), [raw]);
   const [loading, setLoading] = useState(false);
-  const [error, setError] = useState<"no_key" | "auth" | "quota" | "busy" | "generic" | null>(null);
+  const [error, setError] = useState<ErrorCode | null>(null);
 
-  const save = (patch: Partial<State>) => store.set({ ...state, ...patch });
-  const messages = state.threads[state.mode];
+  const commit = (next: State) => store.set(pruneState(next, Date.now()));
+  const active = state.threads.find((t) => t.id === state.activeId) ?? null;
 
-  const changeMode = (mode: Mode) => { save({ mode }); setError(null); };
-  const setDocSlug = (docSlug: string) => save({ docSlug });
-  const clear = () => { save({ threads: { ...state.threads, [state.mode]: [] } }); setError(null); };
+  const changeMode = (mode: Mode) => {
+    if (mode === state.mode) return;
+    commit({ ...state, mode, activeId: null });
+    setError(null);
+  };
+
+  const setDocSlug = (docSlug: string) => {
+    const threads = active && active.mode === "ask"
+      ? state.threads.map((t) => (t.id === active.id ? { ...t, docSlug: docSlug || undefined } : t))
+      : state.threads;
+    commit({ ...state, docSlug, threads });
+  };
+
+  const newChat = () => { commit({ ...state, activeId: null }); setError(null); };
+
+  const openThread = (id: string) => {
+    const t = state.threads.find((x) => x.id === id);
+    if (!t) return;
+    commit({ ...state, activeId: id, mode: t.mode, docSlug: t.docSlug ?? "" });
+    setError(null);
+  };
+
+  const deleteThread = (id: string) => commit({ ...state, threads: state.threads.filter((t) => t.id !== id), activeId: state.activeId === id ? null : state.activeId });
+  const clearAll = () => commit({ ...state, threads: [], activeId: null });
 
   const send = async (text: string) => {
     const t = text.trim();
     if (!t || loading) return;
-    const mode = state.mode;
-    const next = trim([...messages, { role: "user" as const, text: t }]);
-    save({ threads: { ...state.threads, [mode]: next } });
+    const now = Date.now();
+    const base: Thread = active ?? { id: makeId(), mode: state.mode, title: titleFrom(t), createdAt: now, updatedAt: now, docSlug: state.mode === "ask" && state.docSlug ? state.docSlug : undefined, messages: [] };
+    const withUser: Thread = { ...base, updatedAt: now, messages: [...base.messages, { role: "user", text: t }] };
+    commit(upsertThread(state, withUser));
     setLoading(true);
     setError(null);
     try {
       const res = await fetch(SITE.routes.assistantApi, {
         method: "POST",
         headers: { "content-type": "application/json" },
-        body: JSON.stringify({ mode, messages: next, docSlug: mode === "ask" && state.docSlug ? state.docSlug : undefined }),
+        body: JSON.stringify({ mode: base.mode, messages: withUser.messages, docSlug: base.mode === "ask" ? base.docSlug : undefined }),
       });
       const data = (await res.json()) as AssistantResponse;
       if (!res.ok) {
-        const known = ["no_key", "auth", "quota", "busy"] as const;
-        setError((known as readonly string[]).includes(data.error ?? "") ? (data.error as (typeof known)[number]) : "generic");
+        setError(KNOWN_ERRORS.includes(data.error ?? "") ? (data.error as ErrorCode) : "generic");
         return;
       }
-      const latest = parse(store.getSnapshot());
-      save({ threads: { ...latest.threads, [mode]: trim([...next, { role: "model", text: data.text ?? "", imageDataUrl: data.imageDataUrl }]) } });
+      const latest = parseState(store.getSnapshot());
+      const current = latest.threads.find((x) => x.id === withUser.id);
+      if (!current) return; // deleted while waiting
+      const reply: Thread = { ...current, updatedAt: Date.now(), messages: [...current.messages, { role: "model", text: data.text ?? "" }] };
+      commit({ ...latest, threads: latest.threads.map((x) => (x.id === reply.id ? reply : x)) });
     } catch {
       setError("generic");
     } finally {
@@ -70,5 +77,12 @@ export function useAssistant() {
     }
   };
 
-  return { mode: state.mode, changeMode, docSlug: state.docSlug, setDocSlug, messages, send, clear, loading, error };
+  return {
+    mode: state.mode, changeMode,
+    docSlug: state.docSlug, setDocSlug,
+    threads: state.threads, activeId: state.activeId,
+    messages: active?.messages ?? [],
+    send, newChat, openThread, deleteThread, clearAll,
+    loading, error,
+  };
 }

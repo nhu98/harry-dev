@@ -5,6 +5,7 @@
 export const styles = {
   layout: {
     container: "max-w-6xl mx-auto px-4 sm:px-6",
+    narrow: "max-w-2xl mx-auto",
     headerBar: "max-w-6xl mx-auto px-4 sm:px-6 min-h-14 py-2 flex flex-wrap items-center justify-between gap-x-4 gap-y-1",
     navRow: "flex flex-wrap gap-1 justify-end",
     pageStack: "space-y-10",
@@ -56,6 +57,10 @@ export const styles = {
     textarea: "w-full min-w-0 rounded-md border border-border bg-card px-3 py-2 text-sm outline-none focus:border-accent min-h-20 resize-y",
     select: "w-full max-w-full min-w-0 truncate rounded-md border border-border bg-card px-2 py-1.5 text-sm",
     optionRow: "flex flex-col gap-1 text-sm w-full min-w-0",
+    threadRow: "flex items-start gap-2 px-3 py-2",
+    threadActive: "bg-accent/10",
+    threadMain: "flex-1 min-w-0 text-left",
+    threadTitle: "block font-medium truncate",
   },
   bubble: {
     button: "fixed right-4 z-30 rounded-full bg-accent text-white shadow-lg size-12 sm:size-auto sm:px-4 sm:py-3 flex items-center justify-center text-sm font-medium active:scale-95 transition bottom-[calc(1rem+env(safe-area-inset-bottom))]",

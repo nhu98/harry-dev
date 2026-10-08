@@ -17,4 +17,6 @@ Rồi smoke test: `pnpm start -p 3999 &`, chờ 4 giây, curl `/`, `/docs`, `/ch
 
 Responsive mobile (bắt buộc khi sửa UI): `pnpm shot:mobile https://harry-dev-lemon.vercel.app` (hoặc localhost sau `pnpm start`). Lần đầu cần `pnpm exec playwright install webkit`. Phải in "shot-mobile: ok"; nếu BAD, mở ảnh trong `shots/` bằng Read để nhìn rồi sửa.
 
+Nếu đụng tới trợ lý: `pnpm test:assistant <url>` phải in "history test: ok". Nếu đụng bố cục desktop: `pnpm shot:desktop <url>` rồi Read ảnh trong `shots/`; `centerOffset` của các trang hẹp phải bằng 0.
+
 Báo kết quả dạng bảng: bước / trạng thái. Không nói "ổn" nếu có bước chưa chạy.

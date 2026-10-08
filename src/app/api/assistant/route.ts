@@ -1,6 +1,6 @@
 import { NextResponse } from "next/server";
 import { errorCode, runAssistant } from "@/features/assistant/service";
-import type { AssistantRequest } from "@/features/assistant/types";
+import { MODES, type AssistantRequest } from "@/features/assistant/types";
 
 /** No password: the site is single-user. Abuse protection = same-origin check + per-IP rate limit. */
 const WINDOW_MS = 10 * 60 * 1000;
@@ -31,7 +31,7 @@ export async function POST(req: Request) {
 
   let body: AssistantRequest;
   try { body = (await req.json()) as AssistantRequest; } catch { return NextResponse.json({ error: "bad_request" }, { status: 400 }); }
-  if (!body?.mode || !Array.isArray(body.messages) || body.messages.length === 0) {
+  if (!MODES.includes(body?.mode) || !Array.isArray(body.messages) || body.messages.length === 0) {
     return NextResponse.json({ error: "bad_request" }, { status: 400 });
   }
   try {

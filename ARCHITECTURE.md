@@ -89,3 +89,11 @@ app  →  features  →  shared  →  (không import gì của dự án)
 ## Nội dung markdown
 
 `content/` được sinh bởi `scripts/sync-content.mjs` từ thư mục cha theo **allowlist** và có **redact tên người**. Không sửa tay trong `content/`; sửa file gốc rồi chạy `pnpm sync`.
+
+## Trợ lý AI (features/assistant)
+
+- Hai chế độ: `ask` (hỏi đáp, tự tìm trong toàn bộ kho bằng `features/docs/lib/search.ts` hoặc kèm 1 file) và `english` (gia sư A2). Không có tạo ảnh.
+- Server: `app/api/assistant/route.ts` (mỏng: kiểm tra same-origin + rate limit) → `service.ts` (ngữ cảnh + thử lần lượt các model) → `lib/gemini.ts` (một lần fetch).
+- Client: `useAssistant.ts` giữ nhiều cuộc hội thoại trong localStorage (`harry-assistant-v2`). Hàm thuần xử lý parse/dọn dẹp nằm ở `lib/threads.ts`. Giới hạn trong `SITE.assistant`: tối đa 50 cuộc, 90 ngày, 60 tin/cuộc, tổng dưới 3MB. Vượt thì tự xoá cuộc cũ nhất khi ghi.
+- UI: `AssistantChat` có 2 tab (Trò chuyện / Lịch sử), dùng chung cho bong bóng (mọi trang) và trang `/assistant`.
+- Kiểm thử: `pnpm test:assistant [url]` chạy luồng lịch sử với API giả (không tốn hạn mức); `pnpm shot:desktop [url]` và `pnpm shot:mobile [url]` chụp ảnh + đo lệch.

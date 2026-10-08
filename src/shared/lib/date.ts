@@ -11,3 +11,8 @@ export function addDays(d: Date, n: number): Date {
   x.setDate(x.getDate() + n);
   return x;
 }
+
+/** "08/10, 15:30" in the viewer's locale. Client-only data, so no hydration concern. */
+export function formatShort(ts: number): string {
+  return new Intl.DateTimeFormat("vi-VN", { day: "2-digit", month: "2-digit", hour: "2-digit", minute: "2-digit" }).format(new Date(ts));
+}

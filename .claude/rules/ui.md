@@ -23,3 +23,4 @@ paths:
 - Luôn: cleanup (dispose geometry/material/renderer, cancelAnimationFrame, remove listeners) và tôn trọng `prefers-reduced-motion`.
 - Không chặn nội dung: canvas là nền (`pointer-events-none`), chữ nằm trên.
 - Ô nhập (input/textarea/select) trên mobile phải ≥ 16px, nếu không iOS Safari tự zoom khi focus. Đã đặt mặc định trong `globals.css`; không ghi đè bằng `text-sm` cho field.
+- Trang nội dung hẹp (Hôm nay, Checklist, Câu mẫu, Trợ lý) bọc bằng `styles.layout.narrow` (max-w-2xl mx-auto) để nằm giữa; trang rộng (Kiến thức) dùng cả container. Không đặt cột hẹp lệch trái.

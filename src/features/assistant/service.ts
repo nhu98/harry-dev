@@ -1,12 +1,11 @@
 /** Server-side orchestration for /api/assistant. Keeps the route handler thin. */
 import { loadAll } from "@/features/docs/lib/repository";
 import { searchSections } from "@/features/docs/lib/search";
-import { GeminiError, RETRYABLE, generateImage, generateText } from "./lib/gemini";
-import { DOC_CONTEXT_LIMIT, IMAGE_MODEL, SYSTEM, TEXT_MODELS } from "./prompts";
+import { GeminiError, RETRYABLE, generateText } from "./lib/gemini";
+import { DOC_CONTEXT_LIMIT, SYSTEM, TEXT_MODELS } from "./prompts";
 import type { AssistantRequest, AssistantResponse } from "./types";
 
 const MAX_HISTORY = 20;
-
 const RETRIEVE_SECTIONS = 6;
 
 /** One doc when the user picked it; otherwise the best-matching sections across the whole knowledge base. */
@@ -23,11 +22,6 @@ function docContext(question: string, slug?: string): string {
 
 export async function runAssistant(req: AssistantRequest, apiKey: string): Promise<AssistantResponse> {
   const messages = req.messages.slice(-MAX_HISTORY);
-  if (req.mode === "image") {
-    const prompt = messages.at(-1)?.text ?? "";
-    const out = await generateImage({ model: IMAGE_MODEL, prompt, apiKey });
-    return { text: out.text, imageDataUrl: out.imageDataUrl };
-  }
   const question = messages.filter((m) => m.role === "user").map((m) => m.text).slice(-2).join(" ");
   const system = SYSTEM[req.mode] + (req.mode === "ask" ? docContext(question, req.docSlug) : "");
   let lastError: unknown;

@@ -11,7 +11,7 @@ export const metadata: Metadata = { title: STRINGS.today.title };
 export default function TodayPage() {
   const t = STRINGS.today;
   return (
-    <div className="max-w-2xl">
+    <div className={styles.layout.narrow}>
       <PageHeader title={t.title} description={t.description} illustration={SITE.illustrations.today}>
         <div className={styles.control.chipRow}>
           <TextLink href="/checklist"><Badge active>{t.checklist}</Badge></TextLink>

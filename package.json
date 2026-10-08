@@ -12,7 +12,9 @@
     "check:inline": "node scripts/check-inline.mjs",
     "check": "pnpm lint && pnpm exec tsc --noEmit && pnpm check:inline",
     "ics": "node scripts/build-ics.mjs",
-    "shot:mobile": "node scripts/shot-mobile.mjs"
+    "shot:mobile": "node scripts/shot-mobile.mjs",
+    "test:assistant": "node scripts/test-assistant-history.mjs",
+    "shot:desktop": "node scripts/shot-desktop.mjs"
   },
   "dependencies": {
     "github-slugger": "^2.0.0",

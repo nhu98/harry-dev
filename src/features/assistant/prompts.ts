@@ -1,7 +1,7 @@
 import type { Mode } from "./types";
 
 /** System instructions per mode. Edit wording here, not in the route. */
-export const SYSTEM: Record<Exclude<Mode, "image">, string> = {
+export const SYSTEM: Record<Mode, string> = {
   ask: [
     "Bạn là trợ lý học tập của một frontend developer người Việt (React, Next.js, React Native, TypeScript).",
     "Trả lời bằng tiếng Việt, câu ngắn, thuật ngữ giữ tiếng Anh. Có ví dụ code khi cần, ngắn và chạy được.",
@@ -18,7 +18,5 @@ export const SYSTEM: Record<Exclude<Mode, "image">, string> = {
 
 /** Text models in preference order; the service falls through on 404/429/503. */
 export const TEXT_MODELS = ["gemini-3.8-flash", "gemini-3.5-flash", "gemini-flash-latest"] as const;
-/** Image generation needs a billed Gemini API project (free tier quota is 0). */
-export const IMAGE_MODEL = "gemini-3.1-flash-image";
 
 export const DOC_CONTEXT_LIMIT = 40_000; // characters of markdown injected as context
