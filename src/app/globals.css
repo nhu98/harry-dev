@@ -33,6 +33,7 @@
 }
 
 html { scroll-behavior: smooth; overflow-x: hidden; }
+main { padding-bottom: calc(5rem + env(safe-area-inset-bottom)); }
 html, body { max-width: 100%; }
 body { overflow-x: hidden; }
 canvas { display: block; max-width: 100%; }
@@ -44,7 +45,17 @@ body {
 
 /* Markdown article */
 .doc { max-width: none; }
-.doc table { display: block; overflow-x: auto; white-space: nowrap; font-size: 0.85em; }
+.doc table { display: block; overflow-x: auto; font-size: 0.85em; }
+.doc th, .doc td { vertical-align: top; }
+/* Narrow screens: each row becomes a card, each cell shows its column name. */
+@media (max-width: 640px) {
+  .doc table, .doc tbody, .doc tr, .doc td { display: block; width: 100%; }
+  .doc thead { display: none; }
+  .doc tr { border: 1px solid var(--border); border-radius: 0.5rem; padding: 0.5rem 0.75rem; margin: 0 0 0.6rem; background: var(--card); }
+  .doc td { border: 0 !important; padding: 0.2rem 0 !important; white-space: normal; overflow-wrap: anywhere; }
+  .doc td::before { content: attr(data-label); display: block; font-weight: 600; font-size: 0.75rem; color: var(--muted); margin-bottom: 0.1rem; }
+  .doc td:empty { display: none; }
+}
 .doc pre { overflow-x: auto; max-width: 100%; border: 1px solid var(--border); border-radius: 0.5rem; }
 .doc :not(pre) > code { word-break: break-word; }
 .doc p, .doc li { overflow-wrap: anywhere; }

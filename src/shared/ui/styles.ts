@@ -58,8 +58,9 @@ export const styles = {
     optionRow: "flex flex-col gap-1 text-sm w-full min-w-0",
   },
   bubble: {
-    button: "fixed bottom-4 right-4 z-30 rounded-full bg-accent text-white shadow-lg px-4 py-3 text-sm font-medium active:scale-95 transition",
-    panel: "fixed z-30 inset-x-0 bottom-0 w-full sm:inset-x-auto sm:bottom-4 sm:right-4 sm:w-[400px] max-w-full box-border max-h-[85dvh] overflow-y-auto overflow-x-hidden rounded-t-2xl sm:rounded-2xl border border-border bg-background shadow-2xl p-4",
+    button: "fixed right-4 z-30 rounded-full bg-accent text-white shadow-lg size-12 sm:size-auto sm:px-4 sm:py-3 flex items-center justify-center text-sm font-medium active:scale-95 transition bottom-[calc(1rem+env(safe-area-inset-bottom))]",
+    buttonLabel: "hidden sm:inline ml-1",
+    panel: "fixed z-30 inset-x-0 bottom-0 w-full sm:inset-x-auto sm:bottom-4 sm:right-4 sm:w-[400px] max-w-full box-border max-h-[85dvh] overflow-y-auto overflow-x-hidden rounded-t-2xl sm:rounded-2xl border border-border bg-background shadow-2xl p-4 pb-[calc(1rem+env(safe-area-inset-bottom))]",
     panelHeader: "flex items-center justify-between gap-2 mb-1",
   },
   hero3d: {

@@ -12,7 +12,7 @@ export function AssistantBubble({ docs }: { docs: DocMeta[] }) {
   const path = usePathname();
   const t = STRINGS.assistant;
   if (path.startsWith("/assistant")) return null;
-  if (!open) return <button className={styles.bubble.button} onClick={() => setOpen(true)}>💬 {t.bubbleOpen}</button>;
+  if (!open) return <button className={styles.bubble.button} onClick={() => setOpen(true)} aria-label={t.bubbleOpen}>💬<span className={styles.bubble.buttonLabel}>{t.bubbleOpen}</span></button>;
   return (
     <div className={styles.bubble.panel}>
       <div className={styles.bubble.panelHeader}>

@@ -9,6 +9,7 @@ import rehypeHighlight from "rehype-highlight";
 import rehypeStringify from "rehype-stringify";
 import GithubSlugger from "github-slugger";
 import type { Heading } from "../types";
+import { rehypeTableLabels } from "./rehype-table-labels";
 
 const processor = unified()
   .use(remarkParse)
@@ -16,6 +17,7 @@ const processor = unified()
   .use(remarkRehype, { allowDangerousHtml: true })
   .use(rehypeRaw)
   .use(rehypeSlug)
+  .use(rehypeTableLabels)
   .use(rehypeHighlight, { detect: false })
   .use(rehypeStringify);
 
