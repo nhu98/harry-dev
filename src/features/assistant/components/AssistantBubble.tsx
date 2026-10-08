@@ -16,9 +16,9 @@ export function AssistantBubble({ docs }: { docs: DocMeta[] }) {
   return (
     <div className={styles.bubble.panel}>
       <div className={styles.bubble.panelHeader}>
-        <H3>{t.title}</H3>
-        <div className={styles.control.buttonRow}>
-          <TextLink href="/assistant" className="text-xs self-center">{t.bubbleFull}</TextLink>
+        <H3 className="truncate min-w-0">{t.title}</H3>
+        <div className={`${styles.control.buttonRow} shrink-0`}>
+          <TextLink href="/assistant" className="text-xs self-center whitespace-nowrap">{t.bubbleFull}</TextLink>
           <Button variant="outline" className="px-2 py-1" onClick={() => setOpen(false)}>{t.bubbleClose}</Button>
         </div>
       </div>

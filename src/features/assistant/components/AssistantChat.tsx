@@ -24,17 +24,15 @@ export function AssistantChat({ docs, compact = false }: { docs: DocMeta[]; comp
         ))}
       </div>
 
-      <div className="flex flex-wrap gap-3 items-center">
-        {a.mode === "ask" && (
-          <label className={`${styles.text.small} flex items-center gap-2`}>
-            {t.docPickerLabel}
-            <select value={a.docSlug} onChange={(e) => a.setDocSlug(e.target.value)} className={styles.chat.select}>
-              <option value="">{t.docPickerNone}</option>
-              {docs.map((d) => <option key={d.slug} value={d.slug}>{d.code} · {d.title}</option>)}
-            </select>
-          </label>
-        )}
-      </div>
+      {a.mode === "ask" && (
+        <label className={styles.chat.optionRow}>
+          <span className={styles.text.small}>{t.docPickerLabel}</span>
+          <select value={a.docSlug} onChange={(e) => a.setDocSlug(e.target.value)} className={styles.chat.select}>
+            <option value="">{t.docPickerNone}</option>
+            {docs.map((d) => <option key={d.slug} value={d.slug}>{d.code} · {d.title.slice(0, 48)}</option>)}
+          </select>
+        </label>
+      )}
 
       <div className={compact ? styles.chat.logCompact : styles.chat.log}>
         {a.messages.map((m, i) => (
