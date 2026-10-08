@@ -14,7 +14,7 @@ export const STRINGS = {
     docsCount: (n: number) => `${n} tài liệu`,
     howTo: "Cách làm →",
     send: "Gửi",
-    clear: "Xoá",
+    clear: "Xoá hội thoại",
     loading: "Đang trả lời…",
   },
   nav: {
@@ -75,7 +75,7 @@ export const STRINGS = {
   },
   assistant: {
     title: "Trợ lý AI (Gemini)",
-    description: "Hỏi đáp tự tìm trong toàn bộ kho tài liệu (hoặc chọn một file), gia sư tiếng Anh A2, tạo ảnh.",
+    description: "Hỏi đáp tự tìm trong toàn bộ kho tài liệu (hoặc chọn một file), gia sư tiếng Anh A2, tạo ảnh. Lịch sử lưu trên máy này, mỗi chế độ một cuộc hội thoại.",
     modes: { ask: "Hỏi đáp", english: "Gia sư tiếng Anh", image: "Tạo ảnh" },
     docPickerNone: "Tự tìm trong toàn bộ kho",
     docPickerLabel: "Hỏi về tài liệu",

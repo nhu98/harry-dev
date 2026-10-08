@@ -1,5 +1,5 @@
 "use client";
-import { useState } from "react";
+import { useEffect, useRef, useState } from "react";
 import { STRINGS } from "@/config/strings";
 import { Badge, Button, Muted, styles } from "@/shared/ui";
 import type { DocMeta } from "@/features/docs/types";
@@ -11,6 +11,8 @@ const MODES: Mode[] = ["ask", "english", "image"];
 export function AssistantChat({ docs, compact = false }: { docs: DocMeta[]; compact?: boolean }) {
   const a = useAssistant();
   const [draft, setDraft] = useState("");
+  const logRef = useRef<HTMLDivElement>(null);
+  useEffect(() => { logRef.current?.scrollTo({ top: logRef.current.scrollHeight }); }, [a.messages.length, a.loading]);
   const t = STRINGS.assistant;
   const errorText = a.error ? (a.error === "generic" ? t.errorGeneric : t.errors[a.error]) : null;
 
@@ -34,7 +36,7 @@ export function AssistantChat({ docs, compact = false }: { docs: DocMeta[]; comp
         </label>
       )}
 
-      <div className={compact ? styles.chat.logCompact : styles.chat.log}>
+      <div ref={logRef} className={compact ? styles.chat.logCompact : styles.chat.log}>
         {a.messages.map((m, i) => (
           <div key={i} className={m.role === "user" ? styles.chat.user : styles.chat.bot}>
             {m.text}
