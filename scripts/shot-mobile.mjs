@@ -28,7 +28,7 @@ for (const path of PATHS) {
   const ok = r.docWidth <= r.vw && r.offenders.length === 0;
   if (!ok) bad++;
   console.log(`${ok ? "ok " : "BAD"} ${path} doc=${r.docWidth}/${r.vw}${r.offenders.length ? "\n    " + r.offenders.join("\n    ") : ""}`);
-  await page.screenshot({ path: `shots${path.replace(/\//g, "_") || "_home"}.png` });
+  await page.screenshot({ path: `shots/${path.replace(/\//g, "_") || "_home"}.png` });
 }
 await page.goto(base + "/today", { waitUntil: "networkidle" });
 await page.getByRole("button", { name: /Hỏi trợ lý/ }).click();
