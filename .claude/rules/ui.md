@@ -22,3 +22,4 @@ paths:
 - Chỉ `import()` động bên trong `useEffect` của client component, không import tĩnh ở đầu file. Mẫu: `features/portfolio/components/Hero3D.tsx`.
 - Luôn: cleanup (dispose geometry/material/renderer, cancelAnimationFrame, remove listeners) và tôn trọng `prefers-reduced-motion`.
 - Không chặn nội dung: canvas là nền (`pointer-events-none`), chữ nằm trên.
+- Ô nhập (input/textarea/select) trên mobile phải ≥ 16px, nếu không iOS Safari tự zoom khi focus. Đã đặt mặc định trong `globals.css`; không ghi đè bằng `text-sm` cho field.
