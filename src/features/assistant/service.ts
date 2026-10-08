@@ -40,7 +40,7 @@ export async function runAssistant(req: AssistantRequest, apiKey: string): Promi
 export function errorCode(e: unknown): "quota" | "busy" | "upstream" {
   if (e instanceof GeminiError) {
     if (e.status === 429) return "quota";
-    if (e.status === 503) return "busy";
+    if (e.status === 503 || e.status === 504) return "busy";
   }
   return "upstream";
 }
