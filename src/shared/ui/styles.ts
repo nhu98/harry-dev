@@ -5,6 +5,8 @@
 export const styles = {
   layout: {
     container: "max-w-6xl mx-auto px-4 sm:px-6",
+    headerBar: "max-w-6xl mx-auto px-4 sm:px-6 min-h-14 py-2 flex flex-wrap items-center justify-between gap-x-4 gap-y-1",
+    navRow: "flex flex-wrap gap-1 justify-end",
     pageStack: "space-y-10",
     homeStack: "space-y-14",
   },
@@ -20,7 +22,7 @@ export const styles = {
   },
   link: {
     subtle: "hover:text-accent",
-    nav: "px-3 py-1.5 rounded-md whitespace-nowrap",
+    nav: "px-2.5 py-1 sm:px-3 sm:py-1.5 rounded-md whitespace-nowrap text-xs sm:text-sm",
     navActive: "bg-accent/15 text-accent",
     navIdle: "text-muted hover:text-foreground",
   },
@@ -36,7 +38,7 @@ export const styles = {
   control: {
     input: "w-full rounded-md border border-border bg-card px-3 py-2 text-sm outline-none focus:border-accent",
     checkbox: "mt-1 size-4 accent-blue-600",
-    chipRow: "flex gap-2 overflow-x-auto pb-1",
+    chipRow: "flex flex-wrap gap-2",
     buttonRow: "flex gap-2",
   },
   grid: {
