@@ -105,7 +105,7 @@ Trong Claude Code tại thư mục kho, gõ `/weekly-review`. Trả lời câu n
 - **Xong khi:** có 1 unit đánh dấu trong vở + ít nhất 1 câu Slack/chat dùng cấu trúc đó.
 
 ### 4.0b. Đo trình độ khách quan
-- **EF SET** miễn phí, 50 phút, ra điểm CEFR: https://www.efset.org. Làm lần 0 trong tuần này (ghi điểm vào E9). Làm lại tháng 1/2027 và tháng 4/2027. Mục tiêu tháng 4: **≥ 41 điểm (B1)**.
+- **EF SET** miễn phí, 50 phút, ra điểm CEFR: https://www.efset.org. Làm lần 0 trong tuần này, rồi **CN cuối mỗi tháng** (lịch nhắc 15h). Ghi điểm vào trang Hôm nay (mục "Mốc tháng này") và E9. Mốc: 11 ≥33 · 12 ≥35 · 1/2027 ≥37 · 2 ≥39 · 3 ≥40 · 4/2027 ≥41 (B1).
 
 ### 4.1. Chat với AI bằng tiếng Anh (25 phút, từ 15h45)
 - Mở ChatGPT / Claude / Gemini bản web. Dán prompt:

@@ -4,7 +4,7 @@ import { readFileSync, writeFileSync, mkdirSync } from "node:fs";
 
 const items = JSON.parse(readFileSync("src/features/today/reminders.json", "utf8"));
 const TZ = "Asia/Ho_Chi_Minh";
-const START = "20261008"; // first occurrence; RRULE repeats weekly
+const START = "20261008"; // first occurrence; RRULE repeats weekly (or monthly on last weekday for freq=monthly-last)
 
 const esc = (s) => s.replace(/\\/g, "\\\\").replace(/;/g, "\;").replace(/,/g, "\\,");
 const pad = (n) => String(n).padStart(2, "0");
@@ -20,7 +20,7 @@ const events = items.map((it) => [
   `DTSTAMP:20261007T000000Z`,
   `DTSTART;TZID=${TZ}:${START}T${it.time.replace(":", "")}00`,
   `DTEND;TZID=${TZ}:${START}T${plus(it.time, it.minutes)}`,
-  `RRULE:FREQ=WEEKLY;BYDAY=${it.days.join(",")}`,
+  it.freq === "monthly-last" ? `RRULE:FREQ=MONTHLY;BYDAY=-1${it.days[0]}` : `RRULE:FREQ=WEEKLY;BYDAY=${it.days.join(",")}`,
   `SUMMARY:${esc(it.title)}`,
   `DESCRIPTION:${esc(it.note)}`,
   "BEGIN:VALARM",

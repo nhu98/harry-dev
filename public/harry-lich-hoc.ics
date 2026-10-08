@@ -242,4 +242,18 @@ DESCRIPTION:Nói 20 phút với AI trước khi về ba mẹ
 TRIGGER:-PT0M
 END:VALARM
 END:VEVENT
+BEGIN:VEVENT
+UID:harry-month-check@harry-dev
+DTSTAMP:20261007T000000Z
+DTSTART;TZID=Asia/Ho_Chi_Minh:20261008T150000
+DTEND;TZID=Asia/Ho_Chi_Minh:20261008T160000
+RRULE:FREQ=MONTHLY;BYDAY=-1SU
+SUMMARY:Cuối tháng: EF SET 50 phút + thu âm self-intro 2 phút
+DESCRIPTION:efset.org → ghi điểm vào trang Hôm nay và E9. So với tháng trước.
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Cuối tháng: EF SET 50 phút + thu âm self-intro 2 phút
+TRIGGER:-PT0M
+END:VALARM
+END:VEVENT
 END:VCALENDAR

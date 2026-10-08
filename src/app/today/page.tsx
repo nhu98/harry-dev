@@ -4,6 +4,7 @@ import { STRINGS } from "@/config/strings";
 import { Badge, PageHeader, TextLink, styles } from "@/shared/ui";
 import { TodayPlan } from "@/features/today/components/TodayPlan";
 import { Reminders } from "@/features/today/components/Reminders";
+import { MonthGoal } from "@/features/today/components/MonthGoal";
 
 export const metadata: Metadata = { title: STRINGS.today.title };
 
@@ -20,6 +21,7 @@ export default function TodayPage() {
         </div>
       </PageHeader>
       <TodayPlan />
+      <MonthGoal />
       <Reminders />
     </div>
   );

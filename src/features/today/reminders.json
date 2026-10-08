@@ -222,5 +222,16 @@
     ],
     "title": "Nói 20 phút với AI trước khi về ba mẹ",
     "note": "Đề: Tell me about your week."
+  },
+  {
+    "id": "month-check",
+    "time": "15:00",
+    "minutes": 60,
+    "days": [
+      "SU"
+    ],
+    "freq": "monthly-last",
+    "title": "Cuối tháng: EF SET 50 phút + thu âm self-intro 2 phút",
+    "note": "efset.org → ghi điểm vào trang Hôm nay và E9. So với tháng trước."
   }
 ]

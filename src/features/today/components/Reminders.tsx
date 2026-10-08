@@ -22,7 +22,7 @@ export function Reminders() {
               <span className="block">{r.title}</span>
               <Muted size="xs">{r.note}</Muted>
             </span>
-            <span className={`${styles.text.tiny} whitespace-nowrap`}>{r.days.length === 7 ? "mỗi ngày" : r.days.map((d) => DAY_VI[d]).join(" ")}</span>
+            <span className={`${styles.text.tiny} whitespace-nowrap`}>{"freq" in r ? "CN cuối tháng" : r.days.length === 7 ? "mỗi ngày" : r.days.map((d) => DAY_VI[d]).join(" ")}</span>
           </div>
         ))}
       </Card>

@@ -1,7 +1,7 @@
 "use client";
 import { useState } from "react";
 import { STRINGS } from "@/config/strings";
-import { Badge, Button, Input, Muted, styles } from "@/shared/ui";
+import { Badge, Button, Muted, styles } from "@/shared/ui";
 import type { DocMeta } from "@/features/docs/types";
 import { useAssistant } from "../useAssistant";
 import type { Mode } from "../types";
@@ -34,11 +34,6 @@ export function AssistantChat({ docs, compact = false }: { docs: DocMeta[]; comp
             </select>
           </label>
         )}
-        <label className={`${styles.text.small} flex items-center gap-2`}>
-          {t.passwordLabel}
-          <Input type="password" value={a.password} onChange={(e) => a.setPassword(e.target.value)} className="w-40" autoComplete="off" />
-        </label>
-        <Muted size="xs">{t.passwordHint}</Muted>
       </div>
 
       <div className={compact ? styles.chat.logCompact : styles.chat.log}>

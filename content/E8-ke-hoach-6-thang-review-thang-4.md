@@ -25,10 +25,12 @@ Hai ưu tiên trên **giao nhau ở một điểm**: nói chuyện với PO bằ
 | 1 | Hỏi / đề xuất với PO bằng EN | Đếm số lần trong E9 | 0/tuần → **2/tuần** |
 | 2 | Hiểu backend Rails của Waxstat | Số endpoint đã vẽ luồng trong E9 §3 | 0 → **≥ 20** |
 | 3 | Brag doc | Số dòng thành tựu có bằng chứng | 0 → **≥ 24** (1/tuần) |
-| 4 | Tiếng Anh lên B1 (đo khách quan) | Bài **EF SET** miễn phí 50 phút tại https://www.efset.org (điểm 41–50 = B1) + thu âm self-intro cuối tháng | A2 (≈31–40) → **≥ 41 (B1) vào 4/2027**, mốc giữa: ≥ 36 vào 1/2027 |
+| 4 | Tiếng Anh lên B1 (đo khách quan, **mỗi tháng**) | **EF SET** 50 phút tại https://www.efset.org, làm **CN cuối mỗi tháng** (lịch nhắc đã có) + thu âm self-intro 2 phút | Lần 0 (10/2026) = xuất phát · 11: ≥33 · 12: ≥35 · **1/2027 (mốc 3 tháng): ≥37** · 2: ≥39 · 3: ≥40 · **4/2027 (mốc 6 tháng): ≥41 = B1** |
 | 5 | Một đề xuất sản phẩm được chấp nhận | PO/sếp đồng ý làm theo cách bạn đề xuất | 0 → **≥ 1** (ghi rõ trong E9) |
 
 Đạt 4/5 là buổi review tháng 4 bạn có chuyện để nói, dù kết quả lương thế nào.
+
+**Luật chống lười cho mục tiêu 4:** tháng nào điểm EF SET không tăng so với tháng trước, tuần đầu tháng sau tăng nói lên 45 phút/tối và báo cho Claude trong `/weekly-review` để đổi cách học, không chờ tới tháng 4.
 
 ---
 

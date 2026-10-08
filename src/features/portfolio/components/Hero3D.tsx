@@ -29,6 +29,8 @@ export function Hero3D() {
       camera.position.z = 6;
       const renderer = new THREE.WebGLRenderer({ alpha: true, antialias: true, powerPreference: "low-power" });
       renderer.setPixelRatio(Math.min(window.devicePixelRatio, 2));
+      renderer.domElement.style.width = "100%";
+      renderer.domElement.style.height = "100%";
       el.appendChild(renderer.domElement);
 
       const solid = new THREE.Mesh(

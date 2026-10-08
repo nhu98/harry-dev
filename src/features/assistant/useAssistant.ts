@@ -1,20 +1,15 @@
 "use client";
 import { useState } from "react";
 import { SITE } from "@/config/site";
-import { readJson, writeJson } from "@/shared/lib/storage";
 import type { AssistantResponse, Message, Mode } from "./types";
-
-const PASSWORD_KEY = "harry-assistant-password";
 
 export function useAssistant() {
   const [mode, setMode] = useState<Mode>("ask");
   const [docSlug, setDocSlug] = useState<string>("");
   const [messages, setMessages] = useState<Message[]>([]);
-  const [password, setPasswordState] = useState<string>(() => readJson<string>(PASSWORD_KEY, ""));
   const [loading, setLoading] = useState(false);
   const [error, setError] = useState<"no_key" | "auth" | "quota" | "busy" | "generic" | null>(null);
 
-  const setPassword = (p: string) => { setPasswordState(p); writeJson(PASSWORD_KEY, p); };
   const changeMode = (m: Mode) => { setMode(m); setMessages([]); setError(null); };
   const clear = () => { setMessages([]); setError(null); };
 
@@ -28,7 +23,7 @@ export function useAssistant() {
     try {
       const res = await fetch(SITE.routes.assistantApi, {
         method: "POST",
-        headers: { "content-type": "application/json", "x-assistant-password": password },
+        headers: { "content-type": "application/json" },
         body: JSON.stringify({ mode, messages: next, docSlug: mode === "ask" && docSlug ? docSlug : undefined }),
       });
       const data = (await res.json()) as AssistantResponse;
@@ -45,5 +40,5 @@ export function useAssistant() {
     }
   };
 
-  return { mode, changeMode, docSlug, setDocSlug, messages, send, clear, loading, error, password, setPassword };
+  return { mode, changeMode, docSlug, setDocSlug, messages, send, clear, loading, error };
 }
