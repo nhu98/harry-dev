@@ -40,6 +40,7 @@ export const styles = {
     checkbox: "mt-1 size-4 accent-blue-600",
     chipRow: "flex flex-wrap gap-2",
     buttonRow: "flex gap-2",
+    ctaRow: "flex flex-wrap gap-3",
   },
   grid: {
     two: "grid gap-3 sm:grid-cols-2",
@@ -63,7 +64,7 @@ export const styles = {
   },
   hero3d: {
     wrap: "relative overflow-hidden rounded-2xl border border-border bg-card",
-    canvas: "absolute inset-0 pointer-events-none opacity-70 dark:opacity-80",
+    canvas: "absolute inset-0 pointer-events-none opacity-35 sm:opacity-70 dark:opacity-50 sm:dark:opacity-80",
     content: "relative z-10 p-6 sm:p-10",
   },
   illustration: {

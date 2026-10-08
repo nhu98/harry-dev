@@ -52,7 +52,10 @@ export function Hero3D() {
         renderer.setSize(w, h, false);
         camera.aspect = w / h;
         camera.updateProjectionMatrix();
-        solid.position.x = w > 640 ? 2.2 : 0;
+        const narrow = w <= 640;
+        solid.position.x = narrow ? 0 : 2.2;
+        solid.position.y = narrow ? 2.2 : 0;
+        solid.scale.setScalar(narrow ? 0.8 : 1);
       };
       resize();
       const ro = new ResizeObserver(resize);
