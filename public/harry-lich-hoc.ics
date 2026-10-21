@@ -165,7 +165,7 @@ DTSTART;TZID=Asia/Ho_Chi_Minh:20261008T194000
 DTEND;TZID=Asia/Ho_Chi_Minh:20261008T201000
 RRULE:FREQ=WEEKLY;BYDAY=TU,WE
 SUMMARY:Ở nhà: nhại + nói với AI 30 phút
-DESCRIPTION:Nhại 5 câu\, voice 15 phút\, kể lại video 1 phút (thu âm).
+DESCRIPTION:Trang Ôn tập: chép prompt chủ đề hôm nay\, nói với AI. Rồi kể lại video 1 phút.
 BEGIN:VALARM
 ACTION:DISPLAY
 DESCRIPTION:Ở nhà: nhại + nói với AI 30 phút
@@ -179,7 +179,7 @@ DTSTART;TZID=Asia/Ho_Chi_Minh:20261008T194000
 DTEND;TZID=Asia/Ho_Chi_Minh:20261008T195500
 RRULE:FREQ=WEEKLY;BYDAY=MO,TH
 SUMMARY:Chuẩn bị lớp giao tiếp
-DESCRIPTION:Lớp 20h–21h. Điền template E6 §7.
+DESCRIPTION:Mở harry-dev-lemon.vercel.app/practice: đọc bài buổi hôm nay + làm 1 bộ 10 câu. Điền template lớp.
 BEGIN:VALARM
 ACTION:DISPLAY
 DESCRIPTION:Chuẩn bị lớp giao tiếp

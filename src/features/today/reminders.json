@@ -164,7 +164,7 @@
       "WE"
     ],
     "title": "Ở nhà: nhại + nói với AI 30 phút",
-    "note": "Nhại 5 câu, voice 15 phút, kể lại video 1 phút (thu âm)."
+    "note": "Trang Ôn tập: chép prompt chủ đề hôm nay, nói với AI. Rồi kể lại video 1 phút."
   },
   {
     "id": "class-prep",
@@ -175,7 +175,7 @@
       "TH"
     ],
     "title": "Chuẩn bị lớp giao tiếp",
-    "note": "Lớp 20h–21h. Điền template E6 §7."
+    "note": "Mở harry-dev-lemon.vercel.app/practice: đọc bài buổi hôm nay + làm 1 bộ 10 câu. Điền template lớp."
   },
   {
     "id": "class",

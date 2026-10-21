@@ -9,6 +9,8 @@ src/
 │   ├── page.tsx              # /            → features/portfolio
 │   ├── docs/                 # /docs, /docs/[slug] → features/docs
 │   ├── checklist/            # /checklist   → features/checklist
+│   ├── practice/             # /practice    → features/practice (quiz, sổ lỗi, lộ trình, tiến độ)
+│   ├── schedule/             # /schedule    → features/today (bảng thời gian biểu tuần)
 │   └── phrases/              # /phrases     → features/phrases
 │
 ├── config/
@@ -36,6 +38,14 @@ src/
     │   ├── tasks.ts          # Data (từ E5)
     │   ├── useChecklist.ts   # Logic: state, streak, toggle (hook)
     │   └── components/       # DailyChecklist (chỉ render)
+    ├── practice/
+    │   ├── questions.ts      # Câu hỏi viết tay (từ bài tập E12)
+    │   ├── generated.json    # SINH TỰ ĐỘNG bởi scripts/build-practice.mjs từ content/E12 §7 + E13 bảng ⭐. Không sửa tay.
+    │   ├── sets.ts           # Ghép bộ bài: viết tay + sinh tự động
+    │   ├── lessons.ts        # Lộ trình theo ngày (E12 §0/§10.10/§13.4, E13 §13)
+    │   ├── lib/quiz.ts       # Hàm thuần: chấm, trộn câu, Leitner (0/1/3/7/14 ngày), streak
+    │   ├── usePractice.ts    # localStorage "harry-practice-v1" + sao lưu/khôi phục JSON
+    │   └── components/       # PracticeHome, QuizRunner
     ├── phrases/
     │   ├── phrases.ts        # Data
     │   ├── useDeck.ts        # Logic lật thẻ / shuffle (hook, tái dùng cho deck khác)

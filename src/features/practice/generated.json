@@ -1,0 +1,1667 @@
+{
+ "verbs": [
+  {
+   "v1": "put",
+   "star": true,
+   "v2": [
+    "put"
+   ],
+   "v3": [
+    "put"
+   ],
+   "vi": "đặt, để"
+  },
+  {
+   "v1": "set",
+   "star": true,
+   "v2": [
+    "set"
+   ],
+   "v3": [
+    "set"
+   ],
+   "vi": "cài đặt, đặt"
+  },
+  {
+   "v1": "let",
+   "star": true,
+   "v2": [
+    "let"
+   ],
+   "v3": [
+    "let"
+   ],
+   "vi": "để cho"
+  },
+  {
+   "v1": "cut",
+   "star": true,
+   "v2": [
+    "cut"
+   ],
+   "v3": [
+    "cut"
+   ],
+   "vi": "cắt"
+  },
+  {
+   "v1": "cost",
+   "star": true,
+   "v2": [
+    "cost"
+   ],
+   "v3": [
+    "cost"
+   ],
+   "vi": "tốn (tiền, thời gian)"
+  },
+  {
+   "v1": "hit",
+   "star": true,
+   "v2": [
+    "hit"
+   ],
+   "v3": [
+    "hit"
+   ],
+   "vi": "đụng, gặp (lỗi, giới hạn)"
+  },
+  {
+   "v1": "read",
+   "star": true,
+   "v2": [
+    "read"
+   ],
+   "v3": [
+    "read"
+   ],
+   "vi": "đọc (chỉ đổi cách đọc)"
+  },
+  {
+   "v1": "hurt",
+   "star": false,
+   "v2": [
+    "hurt"
+   ],
+   "v3": [
+    "hurt"
+   ],
+   "vi": "làm đau"
+  },
+  {
+   "v1": "shut",
+   "star": false,
+   "v2": [
+    "shut"
+   ],
+   "v3": [
+    "shut"
+   ],
+   "vi": "đóng"
+  },
+  {
+   "v1": "quit",
+   "star": false,
+   "v2": [
+    "quit"
+   ],
+   "v3": [
+    "quit"
+   ],
+   "vi": "bỏ, nghỉ"
+  },
+  {
+   "v1": "build",
+   "star": true,
+   "v2": [
+    "built"
+   ],
+   "v3": [
+    "built"
+   ],
+   "vi": "xây, build"
+  },
+  {
+   "v1": "send",
+   "star": true,
+   "v2": [
+    "sent"
+   ],
+   "v3": [
+    "sent"
+   ],
+   "vi": "gửi"
+  },
+  {
+   "v1": "spend",
+   "star": true,
+   "v2": [
+    "spent"
+   ],
+   "v3": [
+    "spent"
+   ],
+   "vi": "dành, tiêu"
+  },
+  {
+   "v1": "lend",
+   "star": true,
+   "v2": [
+    "lent"
+   ],
+   "v3": [
+    "lent"
+   ],
+   "vi": "cho mượn"
+  },
+  {
+   "v1": "make",
+   "star": true,
+   "v2": [
+    "made"
+   ],
+   "v3": [
+    "made"
+   ],
+   "vi": "làm, tạo"
+  },
+  {
+   "v1": "have",
+   "star": true,
+   "v2": [
+    "had"
+   ],
+   "v3": [
+    "had"
+   ],
+   "vi": "có"
+  },
+  {
+   "v1": "say",
+   "star": true,
+   "v2": [
+    "said"
+   ],
+   "v3": [
+    "said"
+   ],
+   "vi": "nói"
+  },
+  {
+   "v1": "pay",
+   "star": true,
+   "v2": [
+    "paid"
+   ],
+   "v3": [
+    "paid"
+   ],
+   "vi": "trả tiền"
+  },
+  {
+   "v1": "tell",
+   "star": true,
+   "v2": [
+    "told"
+   ],
+   "v3": [
+    "told"
+   ],
+   "vi": "kể, bảo"
+  },
+  {
+   "v1": "sell",
+   "star": true,
+   "v2": [
+    "sold"
+   ],
+   "v3": [
+    "sold"
+   ],
+   "vi": "bán"
+  },
+  {
+   "v1": "find",
+   "star": true,
+   "v2": [
+    "found"
+   ],
+   "v3": [
+    "found"
+   ],
+   "vi": "tìm thấy"
+  },
+  {
+   "v1": "get",
+   "star": true,
+   "v2": [
+    "got"
+   ],
+   "v3": [
+    "got",
+    "gotten"
+   ],
+   "vi": "nhận, lấy"
+  },
+  {
+   "v1": "keep",
+   "star": true,
+   "v2": [
+    "kept"
+   ],
+   "v3": [
+    "kept"
+   ],
+   "vi": "giữ"
+  },
+  {
+   "v1": "leave",
+   "star": true,
+   "v2": [
+    "left"
+   ],
+   "v3": [
+    "left"
+   ],
+   "vi": "rời đi, để lại"
+  },
+  {
+   "v1": "lose",
+   "star": true,
+   "v2": [
+    "lost"
+   ],
+   "v3": [
+    "lost"
+   ],
+   "vi": "mất"
+  },
+  {
+   "v1": "mean",
+   "star": true,
+   "v2": [
+    "meant"
+   ],
+   "v3": [
+    "meant"
+   ],
+   "vi": "có nghĩa là"
+  },
+  {
+   "v1": "meet",
+   "star": true,
+   "v2": [
+    "met"
+   ],
+   "v3": [
+    "met"
+   ],
+   "vi": "gặp"
+  },
+  {
+   "v1": "feel",
+   "star": true,
+   "v2": [
+    "felt"
+   ],
+   "v3": [
+    "felt"
+   ],
+   "vi": "cảm thấy"
+  },
+  {
+   "v1": "sleep",
+   "star": true,
+   "v2": [
+    "slept"
+   ],
+   "v3": [
+    "slept"
+   ],
+   "vi": "ngủ"
+  },
+  {
+   "v1": "think",
+   "star": true,
+   "v2": [
+    "thought"
+   ],
+   "v3": [
+    "thought"
+   ],
+   "vi": "nghĩ"
+  },
+  {
+   "v1": "bring",
+   "star": true,
+   "v2": [
+    "brought"
+   ],
+   "v3": [
+    "brought"
+   ],
+   "vi": "mang đến"
+  },
+  {
+   "v1": "buy",
+   "star": true,
+   "v2": [
+    "bought"
+   ],
+   "v3": [
+    "bought"
+   ],
+   "vi": "mua"
+  },
+  {
+   "v1": "teach",
+   "star": true,
+   "v2": [
+    "taught"
+   ],
+   "v3": [
+    "taught"
+   ],
+   "vi": "dạy"
+  },
+  {
+   "v1": "catch",
+   "star": true,
+   "v2": [
+    "caught"
+   ],
+   "v3": [
+    "caught"
+   ],
+   "vi": "bắt (lỗi, exception)"
+  },
+  {
+   "v1": "understand",
+   "star": true,
+   "v2": [
+    "understood"
+   ],
+   "v3": [
+    "understood"
+   ],
+   "vi": "hiểu"
+  },
+  {
+   "v1": "stand",
+   "star": true,
+   "v2": [
+    "stood"
+   ],
+   "v3": [
+    "stood"
+   ],
+   "vi": "đứng"
+  },
+  {
+   "v1": "hear",
+   "star": true,
+   "v2": [
+    "heard"
+   ],
+   "v3": [
+    "heard"
+   ],
+   "vi": "nghe"
+  },
+  {
+   "v1": "hold",
+   "star": true,
+   "v2": [
+    "held"
+   ],
+   "v3": [
+    "held"
+   ],
+   "vi": "giữ, tổ chức (họp)"
+  },
+  {
+   "v1": "sit",
+   "star": false,
+   "v2": [
+    "sat"
+   ],
+   "v3": [
+    "sat"
+   ],
+   "vi": "ngồi"
+  },
+  {
+   "v1": "win",
+   "star": false,
+   "v2": [
+    "won"
+   ],
+   "v3": [
+    "won"
+   ],
+   "vi": "thắng"
+  },
+  {
+   "v1": "hang",
+   "star": false,
+   "v2": [
+    "hung"
+   ],
+   "v3": [
+    "hung"
+   ],
+   "vi": "treo (app bị treo)"
+  },
+  {
+   "v1": "light",
+   "star": false,
+   "v2": [
+    "lit"
+   ],
+   "v3": [
+    "lit"
+   ],
+   "vi": "thắp sáng"
+  },
+  {
+   "v1": "feed",
+   "star": false,
+   "v2": [
+    "fed"
+   ],
+   "v3": [
+    "fed"
+   ],
+   "vi": "cho ăn"
+  },
+  {
+   "v1": "lead",
+   "star": false,
+   "v2": [
+    "led"
+   ],
+   "v3": [
+    "led"
+   ],
+   "vi": "dẫn dắt"
+  },
+  {
+   "v1": "come",
+   "star": true,
+   "v2": [
+    "came"
+   ],
+   "v3": [
+    "come"
+   ],
+   "vi": "đến"
+  },
+  {
+   "v1": "become",
+   "star": true,
+   "v2": [
+    "became"
+   ],
+   "v3": [
+    "become"
+   ],
+   "vi": "trở thành"
+  },
+  {
+   "v1": "run",
+   "star": true,
+   "v2": [
+    "ran"
+   ],
+   "v3": [
+    "run"
+   ],
+   "vi": "chạy"
+  },
+  {
+   "v1": "be",
+   "star": true,
+   "v2": [
+    "was",
+    "were"
+   ],
+   "v3": [
+    "been"
+   ],
+   "vi": "thì, là, ở"
+  },
+  {
+   "v1": "do",
+   "star": true,
+   "v2": [
+    "did"
+   ],
+   "v3": [
+    "done"
+   ],
+   "vi": "làm"
+  },
+  {
+   "v1": "go",
+   "star": true,
+   "v2": [
+    "went"
+   ],
+   "v3": [
+    "gone"
+   ],
+   "vi": "đi"
+  },
+  {
+   "v1": "see",
+   "star": true,
+   "v2": [
+    "saw"
+   ],
+   "v3": [
+    "seen"
+   ],
+   "vi": "thấy"
+  },
+  {
+   "v1": "know",
+   "star": true,
+   "v2": [
+    "knew"
+   ],
+   "v3": [
+    "known"
+   ],
+   "vi": "biết"
+  },
+  {
+   "v1": "take",
+   "star": true,
+   "v2": [
+    "took"
+   ],
+   "v3": [
+    "taken"
+   ],
+   "vi": "lấy, mất (thời gian)"
+  },
+  {
+   "v1": "give",
+   "star": true,
+   "v2": [
+    "gave"
+   ],
+   "v3": [
+    "given"
+   ],
+   "vi": "đưa, cho"
+  },
+  {
+   "v1": "write",
+   "star": true,
+   "v2": [
+    "wrote"
+   ],
+   "v3": [
+    "written"
+   ],
+   "vi": "viết"
+  },
+  {
+   "v1": "break",
+   "star": true,
+   "v2": [
+    "broke"
+   ],
+   "v3": [
+    "broken"
+   ],
+   "vi": "làm hỏng"
+  },
+  {
+   "v1": "forget",
+   "star": true,
+   "v2": [
+    "forgot"
+   ],
+   "v3": [
+    "forgotten"
+   ],
+   "vi": "quên"
+  },
+  {
+   "v1": "begin",
+   "star": true,
+   "v2": [
+    "began"
+   ],
+   "v3": [
+    "begun"
+   ],
+   "vi": "bắt đầu"
+  },
+  {
+   "v1": "choose",
+   "star": true,
+   "v2": [
+    "chose"
+   ],
+   "v3": [
+    "chosen"
+   ],
+   "vi": "chọn"
+  },
+  {
+   "v1": "speak",
+   "star": true,
+   "v2": [
+    "spoke"
+   ],
+   "v3": [
+    "spoken"
+   ],
+   "vi": "nói"
+  },
+  {
+   "v1": "show",
+   "star": true,
+   "v2": [
+    "showed"
+   ],
+   "v3": [
+    "shown"
+   ],
+   "vi": "cho xem, hiển thị"
+  },
+  {
+   "v1": "grow",
+   "star": true,
+   "v2": [
+    "grew"
+   ],
+   "v3": [
+    "grown"
+   ],
+   "vi": "lớn lên, tăng"
+  },
+  {
+   "v1": "fall",
+   "star": true,
+   "v2": [
+    "fell"
+   ],
+   "v3": [
+    "fallen"
+   ],
+   "vi": "rơi, giảm"
+  },
+  {
+   "v1": "hide",
+   "star": true,
+   "v2": [
+    "hid"
+   ],
+   "v3": [
+    "hidden"
+   ],
+   "vi": "ẩn"
+  },
+  {
+   "v1": "wake",
+   "star": true,
+   "v2": [
+    "woke"
+   ],
+   "v3": [
+    "woken"
+   ],
+   "vi": "thức dậy"
+  },
+  {
+   "v1": "drive",
+   "star": true,
+   "v2": [
+    "drove"
+   ],
+   "v3": [
+    "driven"
+   ],
+   "vi": "lái xe"
+  },
+  {
+   "v1": "eat",
+   "star": true,
+   "v2": [
+    "ate"
+   ],
+   "v3": [
+    "eaten"
+   ],
+   "vi": "ăn"
+  },
+  {
+   "v1": "fly",
+   "star": true,
+   "v2": [
+    "flew"
+   ],
+   "v3": [
+    "flown"
+   ],
+   "vi": "bay"
+  },
+  {
+   "v1": "rise",
+   "star": true,
+   "v2": [
+    "rose"
+   ],
+   "v3": [
+    "risen"
+   ],
+   "vi": "tăng lên"
+  },
+  {
+   "v1": "ride",
+   "star": false,
+   "v2": [
+    "rode"
+   ],
+   "v3": [
+    "ridden"
+   ],
+   "vi": "đi (xe máy, xe đạp)"
+  },
+  {
+   "v1": "draw",
+   "star": false,
+   "v2": [
+    "drew"
+   ],
+   "v3": [
+    "drawn"
+   ],
+   "vi": "vẽ"
+  },
+  {
+   "v1": "drink",
+   "star": false,
+   "v2": [
+    "drank"
+   ],
+   "v3": [
+    "drunk"
+   ],
+   "vi": "uống"
+  },
+  {
+   "v1": "swim",
+   "star": false,
+   "v2": [
+    "swam"
+   ],
+   "v3": [
+    "swum"
+   ],
+   "vi": "bơi"
+  },
+  {
+   "v1": "sing",
+   "star": false,
+   "v2": [
+    "sang"
+   ],
+   "v3": [
+    "sung"
+   ],
+   "vi": "hát"
+  },
+  {
+   "v1": "wear",
+   "star": false,
+   "v2": [
+    "wore"
+   ],
+   "v3": [
+    "worn"
+   ],
+   "vi": "mặc"
+  },
+  {
+   "v1": "steal",
+   "star": false,
+   "v2": [
+    "stole"
+   ],
+   "v3": [
+    "stolen"
+   ],
+   "vi": "ăn cắp"
+  },
+  {
+   "v1": "throw",
+   "star": false,
+   "v2": [
+    "threw"
+   ],
+   "v3": [
+    "thrown"
+   ],
+   "vi": "ném (throw an error)"
+  }
+ ],
+ "topics": [
+  {
+   "n": 1,
+   "title": "Time management / discipline",
+   "heading": "1. Time management / discipline",
+   "words": [
+    {
+     "en": "prioritize",
+     "vi": "ưu tiên"
+    },
+    {
+     "en": "stay focused on",
+     "vi": "tập trung vào"
+    },
+    {
+     "en": "stay consistent",
+     "vi": "giữ đều đặn"
+    },
+    {
+     "en": "be ahead of / behind schedule",
+     "vi": "sớm hơn / trễ so với kế hoạch"
+    },
+    {
+     "en": "put off",
+     "vi": "trì hoãn"
+    },
+    {
+     "en": "procrastinate",
+     "vi": "trì hoãn (thói quen)"
+    },
+    {
+     "en": "be distracted",
+     "vi": "bị xao nhãng"
+    },
+    {
+     "en": "leave sth to the last minute",
+     "vi": "để nước tới chân mới nhảy"
+    },
+    {
+     "en": "be in a rush",
+     "vi": "đang vội"
+    },
+    {
+     "en": "meet / miss a deadline",
+     "vi": "kịp / trễ deadline"
+    },
+    {
+     "en": "be due / overdue",
+     "vi": "tới hạn / quá hạn"
+    },
+    {
+     "en": "be punctual / run late",
+     "vi": "đúng giờ / đang bị trễ"
+    },
+    {
+     "en": "well-organized / disorganized",
+     "vi": "ngăn nắp / bừa bộn"
+    },
+    {
+     "en": "proactive",
+     "vi": "chủ động"
+    },
+    {
+     "en": "absent-minded",
+     "vi": "đãng trí"
+    }
+   ]
+  },
+  {
+   "n": 2,
+   "title": "Date / hangout",
+   "heading": "2. Date / hangout",
+   "words": [
+    {
+     "en": "keep / stay in touch with",
+     "vi": "giữ liên lạc"
+    },
+    {
+     "en": "reach out to",
+     "vi": "chủ động liên hệ"
+    },
+    {
+     "en": "get in touch with",
+     "vi": "liên lạc với"
+    },
+    {
+     "en": "hang out with",
+     "vi": "đi chơi với"
+    },
+    {
+     "en": "go out with",
+     "vi": "hẹn hò, đi chơi với"
+    },
+    {
+     "en": "catch up with",
+     "vi": "gặp lại hỏi thăm"
+    },
+    {
+     "en": "keep sb posted",
+     "vi": "báo tin cho ai thường xuyên"
+    },
+    {
+     "en": "meet up with",
+     "vi": "hẹn gặp"
+    },
+    {
+     "en": "run into",
+     "vi": "tình cờ gặp"
+    },
+    {
+     "en": "show up",
+     "vi": "xuất hiện, tới"
+    },
+    {
+     "en": "hit it off",
+     "vi": "hợp nhau ngay"
+    },
+    {
+     "en": "get along with",
+     "vi": "hợp với"
+    },
+    {
+     "en": "be close with",
+     "vi": "thân với"
+    },
+    {
+     "en": "fall out with",
+     "vi": "giận nhau"
+    },
+    {
+     "en": "make up (with)",
+     "vi": "làm lành"
+    }
+   ]
+  },
+  {
+   "n": 3,
+   "title": "Weather & climate",
+   "heading": "3. Weather & climate",
+   "words": [
+    {
+     "en": "clear / sunny",
+     "vi": "trời quang / nắng"
+    },
+    {
+     "en": "partly cloudy",
+     "vi": "có mây rải rác"
+    },
+    {
+     "en": "overcast / gloomy",
+     "vi": "u ám"
+    },
+    {
+     "en": "foggy",
+     "vi": "có sương mù"
+    },
+    {
+     "en": "boiling hot / scorching",
+     "vi": "nóng như thiêu"
+    },
+    {
+     "en": "humid / muggy",
+     "vi": "ẩm, oi"
+    },
+    {
+     "en": "breezy / windy",
+     "vi": "có gió nhẹ / gió to"
+    },
+    {
+     "en": "chilly",
+     "vi": "se lạnh"
+    },
+    {
+     "en": "freezing",
+     "vi": "lạnh cóng"
+    },
+    {
+     "en": "tropical",
+     "vi": "nhiệt đới"
+    },
+    {
+     "en": "mild",
+     "vi": "ôn hoà, dễ chịu"
+    },
+    {
+     "en": "spitting / drizzling",
+     "vi": "mưa lất phất"
+    },
+    {
+     "en": "showers",
+     "vi": "mưa rào"
+    },
+    {
+     "en": "pouring / downpour",
+     "vi": "mưa như trút"
+    },
+    {
+     "en": "get caught in the rain",
+     "vi": "bị mắc mưa"
+    }
+   ]
+  },
+  {
+   "n": 4,
+   "title": "Health",
+   "heading": "4. Health",
+   "words": [
+    {
+     "en": "be stressed out",
+     "vi": "căng thẳng"
+    },
+    {
+     "en": "be burnt out",
+     "vi": "kiệt sức (vì làm quá nhiều)"
+    },
+    {
+     "en": "be overwhelmed",
+     "vi": "quá tải"
+    },
+    {
+     "en": "be under pressure",
+     "vi": "bị áp lực"
+    },
+    {
+     "en": "be exhausted / drained",
+     "vi": "mệt rã rời"
+    },
+    {
+     "en": "deal with / cope with",
+     "vi": "đối phó với"
+    },
+    {
+     "en": "set boundaries",
+     "vi": "đặt giới hạn"
+    },
+    {
+     "en": "recharge my battery",
+     "vi": "sạc lại năng lượng"
+    },
+    {
+     "en": "suffer from",
+     "vi": "bị (bệnh)"
+    },
+    {
+     "en": "stay hydrated",
+     "vi": "uống đủ nước"
+    },
+    {
+     "en": "work out / hit the gym",
+     "vi": "tập thể dục / đi gym"
+    },
+    {
+     "en": "get out of shape",
+     "vi": "mất dáng, yếu đi"
+    },
+    {
+     "en": "cut down on",
+     "vi": "giảm (đồ ngọt, cà phê)"
+    },
+    {
+     "en": "sedentary lifestyle",
+     "vi": "lối sống ít vận động"
+    },
+    {
+     "en": "lack of sleep / insomnia",
+     "vi": "thiếu ngủ / mất ngủ"
+    },
+    {
+     "en": "back pain / neck pain",
+     "vi": "đau lưng / đau cổ"
+    }
+   ]
+  },
+  {
+   "n": 5,
+   "title": "F&B",
+   "heading": "5. F&B",
+   "words": [
+    {
+     "en": "street food stall",
+     "vi": "quán vỉa hè"
+    },
+    {
+     "en": "food court",
+     "vi": "khu ăn uống (trong TTTM)"
+    },
+    {
+     "en": "crispy / crunchy",
+     "vi": "giòn"
+    },
+    {
+     "en": "tender / juicy",
+     "vi": "mềm / mọng nước"
+    },
+    {
+     "en": "chewy",
+     "vi": "dai"
+    },
+    {
+     "en": "rich / creamy",
+     "vi": "béo, đậm"
+    },
+    {
+     "en": "spicy / salty / sour / bitter / sweet",
+     "vi": "cay / mặn / chua / đắng / ngọt"
+    },
+    {
+     "en": "savory >< bland",
+     "vi": "đậm đà >< nhạt"
+    },
+    {
+     "en": "rare / medium / well-done",
+     "vi": "tái / vừa / chín kỹ"
+    },
+    {
+     "en": "undercooked / overcooked / burnt",
+     "vi": "chưa chín / chín quá / cháy"
+    },
+    {
+     "en": "expired / gone bad",
+     "vi": "hết hạn / hư"
+    },
+    {
+     "en": "starter / main course / dessert",
+     "vi": "khai vị / món chính / tráng miệng"
+    },
+    {
+     "en": "side dish",
+     "vi": "món phụ"
+    },
+    {
+     "en": "less ice / no sugar",
+     "vi": "ít đá / không đường"
+    }
+   ]
+  },
+  {
+   "n": 6,
+   "title": "Traffic",
+   "heading": "6. Traffic",
+   "words": [
+    {
+     "en": "traffic jam",
+     "vi": "kẹt xe"
+    },
+    {
+     "en": "rush hour",
+     "vi": "giờ cao điểm"
+    },
+    {
+     "en": "commute",
+     "vi": "đi làm (hằng ngày)"
+    },
+    {
+     "en": "get stuck in traffic",
+     "vi": "bị kẹt xe"
+    },
+    {
+     "en": "take a bus / book a Grab",
+     "vi": "đi xe buýt / đặt Grab"
+    },
+    {
+     "en": "hop on / hop off",
+     "vi": "lên / xuống xe"
+    },
+    {
+     "en": "intersection",
+     "vi": "ngã tư"
+    },
+    {
+     "en": "roundabout",
+     "vi": "vòng xoay"
+    },
+    {
+     "en": "sidewalk",
+     "vi": "vỉa hè"
+    },
+    {
+     "en": "lane",
+     "vi": "làn đường"
+    },
+    {
+     "en": "pothole",
+     "vi": "ổ gà"
+    },
+    {
+     "en": "speed bump",
+     "vi": "gờ giảm tốc"
+    },
+    {
+     "en": "run a red light",
+     "vi": "vượt đèn đỏ"
+    },
+    {
+     "en": "pull over",
+     "vi": "tấp vào lề"
+    },
+    {
+     "en": "overtake",
+     "vi": "vượt xe"
+    },
+    {
+     "en": "get fined",
+     "vi": "bị phạt"
+    }
+   ]
+  },
+  {
+   "n": 7,
+   "title": "Accommodation & packing",
+   "heading": "7. Accommodation & packing",
+   "words": [
+    {
+     "en": "apartment / studio",
+     "vi": "căn hộ / căn studio"
+    },
+    {
+     "en": "rented room",
+     "vi": "phòng trọ"
+    },
+    {
+     "en": "shared house",
+     "vi": "nhà ở ghép"
+    },
+    {
+     "en": "spacious / cramped",
+     "vi": "rộng rãi / chật chội"
+    },
+    {
+     "en": "cozy",
+     "vi": "ấm cúng"
+    },
+    {
+     "en": "furnished >< unfurnished",
+     "vi": "có / không có nội thất"
+    },
+    {
+     "en": "quiet / peaceful",
+     "vi": "yên tĩnh"
+    },
+    {
+     "en": "city center / outskirts",
+     "vi": "trung tâm / ngoại ô"
+    },
+    {
+     "en": "in the middle of nowhere",
+     "vi": "ở nơi hẻo lánh"
+    },
+    {
+     "en": "move in / move out",
+     "vi": "dọn vào / dọn ra"
+    },
+    {
+     "en": "pack / unpack",
+     "vi": "đóng đồ / dỡ đồ"
+    },
+    {
+     "en": "landlord / tenant",
+     "vi": "chủ nhà / người thuê"
+    },
+    {
+     "en": "rental contract",
+     "vi": "hợp đồng thuê"
+    },
+    {
+     "en": "deposit",
+     "vi": "tiền cọc"
+    },
+    {
+     "en": "utilities (bills)",
+     "vi": "tiền điện nước"
+    }
+   ]
+  },
+  {
+   "n": 8,
+   "title": "Shopping",
+   "heading": "8. Shopping",
+   "words": [
+    {
+     "en": "convenience store",
+     "vi": "cửa hàng tiện lợi"
+    },
+    {
+     "en": "grocery store",
+     "vi": "cửa hàng tạp hoá"
+    },
+    {
+     "en": "online store / e-commerce platform",
+     "vi": "cửa hàng online / sàn TMĐT"
+    },
+    {
+     "en": "aisle",
+     "vi": "lối đi giữa kệ"
+    },
+    {
+     "en": "shopping cart / basket",
+     "vi": "xe đẩy / giỏ"
+    },
+    {
+     "en": "price tag",
+     "vi": "nhãn giá"
+    },
+    {
+     "en": "checkout (counter)",
+     "vi": "quầy tính tiền"
+    },
+    {
+     "en": "fitting room",
+     "vi": "phòng thử đồ"
+    },
+    {
+     "en": "on sale / 30% off",
+     "vi": "đang giảm giá / giảm 30%"
+    },
+    {
+     "en": "special offer / flash sale",
+     "vi": "ưu đãi / giảm giá chớp nhoáng"
+    },
+    {
+     "en": "cash or card?",
+     "vi": "tiền mặt hay thẻ?"
+    },
+    {
+     "en": "scan a QR code",
+     "vi": "quét mã QR"
+    },
+    {
+     "en": "change",
+     "vi": "tiền thối"
+    },
+    {
+     "en": "split the bill",
+     "vi": "chia tiền"
+    },
+    {
+     "en": "receipt",
+     "vi": "hoá đơn"
+    },
+    {
+     "en": "membership",
+     "vi": "thẻ thành viên"
+    }
+   ]
+  },
+  {
+   "n": 9,
+   "title": "Party & event",
+   "heading": "9. Party & event",
+   "words": [
+    {
+     "en": "host",
+     "vi": "chủ tiệc / tổ chức"
+    },
+    {
+     "en": "birthday / farewell / year-end party",
+     "vi": "tiệc sinh nhật / chia tay / tất niên"
+    },
+    {
+     "en": "housewarming party",
+     "vi": "tiệc tân gia"
+    },
+    {
+     "en": "team-building",
+     "vi": "team building"
+    },
+    {
+     "en": "product launch",
+     "vi": "ra mắt sản phẩm"
+    },
+    {
+     "en": "conference",
+     "vi": "hội nghị"
+    },
+    {
+     "en": "invite sb over",
+     "vi": "mời ai tới nhà"
+    },
+    {
+     "en": "welcome guests",
+     "vi": "đón khách"
+    },
+    {
+     "en": "make a toast to",
+     "vi": "nâng ly chúc"
+    },
+    {
+     "en": "mingle with",
+     "vi": "giao lưu với"
+    },
+    {
+     "en": "break the ice",
+     "vi": "phá băng"
+    },
+    {
+     "en": "show up",
+     "vi": "tới (tiệc)"
+    },
+    {
+     "en": "dress code",
+     "vi": "quy định trang phục"
+    },
+    {
+     "en": "Thank you for having me.",
+     "vi": "Cảm ơn đã mời tôi."
+    },
+    {
+     "en": "Make yourself at home.",
+     "vi": "Cứ tự nhiên như ở nhà."
+    }
+   ]
+  },
+  {
+   "n": 10,
+   "title": "Education",
+   "heading": "10. Education",
+   "words": [
+    {
+     "en": "primary / secondary / high school",
+     "vi": "tiểu học / THCS / THPT"
+    },
+    {
+     "en": "college / university",
+     "vi": "cao đẳng, đại học"
+    },
+    {
+     "en": "public / private school",
+     "vi": "trường công / tư"
+    },
+    {
+     "en": "major (in)",
+     "vi": "chuyên ngành"
+    },
+    {
+     "en": "semester",
+     "vi": "học kỳ"
+    },
+    {
+     "en": "course / credit",
+     "vi": "môn / tín chỉ"
+    },
+    {
+     "en": "tuition (fee)",
+     "vi": "học phí"
+    },
+    {
+     "en": "scholarship",
+     "vi": "học bổng"
+    },
+    {
+     "en": "enroll in",
+     "vi": "ghi danh"
+    },
+    {
+     "en": "skip class",
+     "vi": "cúp học"
+    },
+    {
+     "en": "fail / retake",
+     "vi": "trượt / học lại"
+    },
+    {
+     "en": "drop out",
+     "vi": "bỏ học"
+    },
+    {
+     "en": "graduate (from)",
+     "vi": "tốt nghiệp"
+    },
+    {
+     "en": "assignment",
+     "vi": "bài tập"
+    },
+    {
+     "en": "midterm / final exam",
+     "vi": "thi giữa kỳ / cuối kỳ"
+    }
+   ]
+  },
+  {
+   "n": 11,
+   "title": "Fashion / clothing",
+   "heading": "11. Fashion / clothing",
+   "words": [
+    {
+     "en": "casual / formal",
+     "vi": "thường ngày / trang trọng"
+    },
+    {
+     "en": "sporty / minimalist",
+     "vi": "thể thao / tối giản"
+    },
+    {
+     "en": "plain / striped / checked",
+     "vi": "trơn / sọc / caro"
+    },
+    {
+     "en": "cotton / denim / leather",
+     "vi": "cotton / vải jean / da"
+    },
+    {
+     "en": "try on",
+     "vi": "thử đồ"
+    },
+    {
+     "en": "put on / wear",
+     "vi": "mặc vào / đang mặc"
+    },
+    {
+     "en": "fit / suit",
+     "vi": "vừa (kích cỡ) / hợp (người)"
+    },
+    {
+     "en": "loose / tight",
+     "vi": "rộng / chật"
+    },
+    {
+     "en": "match",
+     "vi": "hợp màu, hợp nhau"
+    },
+    {
+     "en": "dress up",
+     "vi": "ăn mặc chỉnh tề"
+    },
+    {
+     "en": "overdressed / underdressed",
+     "vi": "mặc quá trang trọng / quá xuề xoà"
+    },
+    {
+     "en": "sense of style",
+     "vi": "gu ăn mặc"
+    },
+    {
+     "en": "trendy / old-fashioned",
+     "vi": "hợp mốt / lỗi mốt"
+    },
+    {
+     "en": "fast fashion",
+     "vi": "thời trang nhanh"
+    },
+    {
+     "en": "hoodie / T-shirt / jeans",
+     "vi": "áo hoodie / áo thun / quần jean"
+    }
+   ]
+  },
+  {
+   "n": 12,
+   "title": "Housing / furniture & appliances",
+   "heading": "12. Housing / furniture & appliances",
+   "words": [
+    {
+     "en": "fridge / microwave / oven",
+     "vi": "tủ lạnh / lò vi sóng / lò nướng"
+    },
+    {
+     "en": "rice cooker / air fryer",
+     "vi": "nồi cơm điện / nồi chiên không dầu"
+    },
+    {
+     "en": "washing machine",
+     "vi": "máy giặt"
+    },
+    {
+     "en": "vacuum cleaner",
+     "vi": "máy hút bụi"
+    },
+    {
+     "en": "air conditioner (AC) / fan",
+     "vi": "máy lạnh / quạt"
+    },
+    {
+     "en": "router / charger",
+     "vi": "router / sạc"
+    },
+    {
+     "en": "turn on / turn off",
+     "vi": "bật / tắt"
+    },
+    {
+     "en": "plug in / unplug",
+     "vi": "cắm điện / rút điện"
+    },
+    {
+     "en": "outlet",
+     "vi": "ổ cắm"
+    },
+    {
+     "en": "set the timer",
+     "vi": "hẹn giờ"
+    },
+    {
+     "en": "break down",
+     "vi": "bị hỏng"
+    },
+    {
+     "en": "run out of",
+     "vi": "hết (pin, nước)"
+    },
+    {
+     "en": "overheat",
+     "vi": "quá nóng"
+    },
+    {
+     "en": "sofa / desk / shelf",
+     "vi": "ghế sofa / bàn làm việc / kệ"
+    },
+    {
+     "en": "curtain / pillow / blanket",
+     "vi": "rèm / gối / chăn"
+    }
+   ]
+  }
+ ]
+}

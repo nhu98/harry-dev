@@ -11,6 +11,8 @@ export const SITE = {
   nav: [
     { href: "/", key: "home" },
     { href: "/today", key: "today" },
+    { href: "/schedule", key: "schedule" },
+    { href: "/practice", key: "practice" },
     { href: "/docs", key: "docs" },
     { href: "/checklist", key: "checklist" },
     { href: "/phrases", key: "phrases" },
@@ -19,5 +21,5 @@ export const SITE = {
   illustrations: { today: "/illustrations/today.svg", checklist: "/illustrations/checklist.svg", phrases: "/illustrations/phrases.svg", assistant: "/illustrations/assistant.svg", docs: "/illustrations/docs.svg" },
   /** Assistant history retention: oldest threads are dropped beyond these limits. */
   assistant: { maxThreads: 50, maxAgeDays: 90, maxMessages: 60 },
-  routes: { assistantApi: "/api/assistant", docs: (slug: string) => `/docs/${slug}`, docsGroup: (g: string) => `/docs#group-${g}` },
+  routes: { practice: "/practice", schedule: "/schedule", assistantApi: "/api/assistant", docs: (slug: string) => `/docs/${slug}`, docsGroup: (g: string) => `/docs#group-${g}` },
 } as const;

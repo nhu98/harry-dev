@@ -138,6 +138,7 @@ Mở E9 §2, viết 3 câu EN: Today I... / The hardest part was... / Tomorrow I
 2. Mở app ChatGPT (nút tai nghe, Voice) hoặc Gemini Live hoặc app Claude (voice).
 3. Nói prompt này bằng tiếng Anh, đơn giản: *"Let's practice. You are my teammate. Ask me about my work today. Speak slowly. Correct me gently."*
 4. Nói 10 phút. Sai cứ nói tiếp. Mục tiêu là số câu nói ra.
+   - Từ 2026-10-27: thay prompt bước 3 bằng prompt chủ đề ở [E13 §0](E13-tu-vung-theo-chu-de.md), chủ đề theo lịch [E13 §13](E13-tu-vung-theo-chu-de.md). Dùng thêm filler và khung trả lời ở [E12 §12](E12-on-tap-lop-giao-tiep.md).
 5. Kết thúc: *"What were my 3 biggest mistakes?"* Ghi lại.
 6. **10 phút cuối:** kể lại video chiều nay trong 1 phút, không nhìn giấy, thu âm. Nghe lại 1 lần. Đây là bài "retell", kỹ năng nói lên nhanh nhất nhờ nó.
 
@@ -149,8 +150,8 @@ Nói thầm lại 5 câu đã chép hôm qua, từ trí nhớ. Quên thì bỏ q
 - Tuần có khách nước ngoài sang: thay bằng prompt đóng vai ở [E10](E10-script-gap-PM.md) mục 9.
 
 ### T2 và T5: lớp giao tiếp 20h–21h
-- 19h40: điền template E6 §7 (chủ đề từ E7 Kho 4 + 3 câu small talk E7 Kho 5). 15 phút.
-- Sau lớp: 3 lỗi bị sửa + 3 từ mới → Anki.
+- 19h40: điền template E6 §7 (chủ đề từ E7 Kho 4 + 3 câu small talk E7 Kho 5). 15 phút. Ôn ngữ pháp mentor dạy theo lịch ở [E12 §0](E12-on-tap-lop-giao-tiep.md).
+- Sau lớp: 3 lỗi bị sửa + 3 từ mới → Anki, và ghi vào nhật ký lớp [E12 §14](E12-on-tap-lop-giao-tiep.md).
 
 ### CN (tuỳ hứng, 15 phút)
 Voice với AI kể về tuần vừa rồi. CN cuối tháng: thu âm self-intro 2 phút theo E6 §5, lưu file tên `intro-2026-10.m4a`. Tháng sau so với tháng này.
