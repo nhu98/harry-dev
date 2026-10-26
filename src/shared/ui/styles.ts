@@ -54,6 +54,7 @@ export const styles = {
     logCompact: "space-y-3 max-h-[40vh] overflow-y-auto pr-1",
     user: "ml-auto max-w-[85%] rounded-xl bg-accent text-white px-3 py-2 text-sm whitespace-pre-wrap break-words",
     bot: "mr-auto max-w-[85%] rounded-xl border border-border bg-card px-3 py-2 text-sm whitespace-pre-wrap break-words",
+    botRich: "doc chat-md mr-auto max-w-[92%] rounded-xl border border-border bg-card px-4 py-3 prose prose-sm prose-neutral dark:prose-invert prose-headings:mt-4 prose-headings:mb-2 prose-p:my-2 prose-ul:my-2 prose-ol:my-2 prose-li:my-0.5 prose-hr:my-4 prose-a:text-accent prose-code:before:content-none prose-code:after:content-none break-words",
     textarea: "w-full min-w-0 rounded-md border border-border bg-card px-3 py-2 text-sm outline-none focus:border-accent min-h-20 resize-y",
     select: "w-full max-w-full min-w-0 truncate rounded-md border border-border bg-card px-2 py-1.5 text-sm",
     optionRow: "flex flex-col gap-1 text-sm w-full min-w-0",

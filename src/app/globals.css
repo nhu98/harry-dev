@@ -67,6 +67,11 @@ body {
 .doc h3 { scroll-margin-top: 5rem; }
 .doc img { max-width: 100%; }
 .doc blockquote { font-style: normal; }
+/* Chat replies: tight first/last margins, compact headings and tables inside a bubble. */
+.chat-md > :first-child { margin-top: 0; }
+.chat-md > :last-child { margin-bottom: 0; }
+.chat-md h1, .chat-md h2, .chat-md h3 { font-size: 1rem; }
+.chat-md table { margin: 0.5rem 0; }
 
 /* highlight.js minimal theme (works light + dark) */
 .hljs { color: var(--foreground); }

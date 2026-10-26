@@ -6,6 +6,7 @@ import type { DocMeta } from "@/features/docs/types";
 import { useAssistant } from "../useAssistant";
 import { MODES } from "../types";
 import { ThreadHistory } from "./ThreadHistory";
+import { ChatMarkdown } from "./ChatMarkdown";
 
 type View = "chat" | "history";
 
@@ -58,7 +59,7 @@ export function AssistantChat({ docs, compact = false }: { docs: DocMeta[]; comp
 
           <div ref={logRef} className={compact ? styles.chat.logCompact : styles.chat.log}>
             {a.messages.map((m, i) => (
-              <div key={i} className={m.role === "user" ? styles.chat.user : styles.chat.bot}>{m.text}</div>
+              m.role === "user" ? <div key={i} className={styles.chat.user}>{m.text}</div> : <ChatMarkdown key={i} text={m.text} />
             ))}
             {a.loading && <Muted size="xs">{STRINGS.common.loading}</Muted>}
             {errorText && <Muted size="xs" className="text-red-500">{errorText}</Muted>}

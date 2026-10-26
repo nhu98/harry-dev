@@ -9,7 +9,7 @@ import rehypeHighlight from "rehype-highlight";
 import rehypeStringify from "rehype-stringify";
 import GithubSlugger from "github-slugger";
 import type { Heading } from "../types";
-import { rehypeTableLabels } from "./rehype-table-labels";
+import { rehypeTableLabels } from "@/shared/lib/rehype-table-labels";
 
 const processor = unified()
   .use(remarkParse)
